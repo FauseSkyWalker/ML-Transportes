@@ -1,0 +1,3281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_40e48591c265d4979c650b6a46dcf57a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_40e48591c265d4979c650b6a46dcf57a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_40e48591c265d4979c650b6a46dcf57a = L.map(
+                "map_40e48591c265d4979c650b6a46dcf57a",
+                {
+                    center: [-16.265018, -43.13080786],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_de46f5a7ba19cb0380a91f3d8ef1ab58 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_de46f5a7ba19cb0380a91f3d8ef1ab58.addTo(map_40e48591c265d4979c650b6a46dcf57a);
+        
+    
+            var marker_cluster_1c54d59f565fd41597e322b6b4059e67 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_ac35a4e46183cd3e15315663cbd5ef41 = L.circleMarker(
+                [-16.04133, -47.540447],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.12415060330663, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_08fce52b250a9e2f694562a2559ac97f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1a305d0706a1c2c48ad8914284ae91aa = $(`<div id="html_1a305d0706a1c2c48ad8914284ae91aa" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 0.0<br>     <b>Total de acidentes:</b> 14<br>     <b>Mortos:</b> 14.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 8<br>Caminhonete: 6     </div>`)[0];
+                popup_08fce52b250a9e2f694562a2559ac97f.setContent(html_1a305d0706a1c2c48ad8914284ae91aa);
+            
+        
+
+        circle_marker_ac35a4e46183cd3e15315663cbd5ef41.bindPopup(popup_08fce52b250a9e2f694562a2559ac97f)
+        ;
+
+        
+    
+    
+            var circle_marker_73ed55ff1b850af1ec9d6cdfc0c5c406 = L.circleMarker(
+                [-15.985051, -47.577747],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.375278407684165, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_592316e72bc3ffc027041c6e9c4bee07 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c08ff42b8187104c6c55d598120503a6 = $(`<div id="html_c08ff42b8187104c6c55d598120503a6" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 5.0<br>     <b>Total de acidentes:</b> 5<br>     <b>Mortos:</b> 5.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 5     </div>`)[0];
+                popup_592316e72bc3ffc027041c6e9c4bee07.setContent(html_c08ff42b8187104c6c55d598120503a6);
+            
+        
+
+        circle_marker_73ed55ff1b850af1ec9d6cdfc0c5c406.bindPopup(popup_592316e72bc3ffc027041c6e9c4bee07)
+        ;
+
+        
+    
+    
+            var circle_marker_d3f96de6dcd1109f2500e3ee1152b77e = L.circleMarker(
+                [-16.205414, -47.431618],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.8283137373023, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_ccc106b12852489db6e14829d2e32797 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_68ed559ac79fe7f8487837b65b83fc80 = $(`<div id="html_68ed559ac79fe7f8487837b65b83fc80" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 10.0<br>     <b>Total de acidentes:</b> 4<br>     <b>Mortos:</b> 4.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 3<br>Caminhonete: 1     </div>`)[0];
+                popup_ccc106b12852489db6e14829d2e32797.setContent(html_68ed559ac79fe7f8487837b65b83fc80);
+            
+        
+
+        circle_marker_d3f96de6dcd1109f2500e3ee1152b77e.bindPopup(popup_ccc106b12852489db6e14829d2e32797)
+        ;
+
+        
+    
+    
+            var circle_marker_65800b9398390f56cce72268de3edda1 = L.circleMarker(
+                [-16.17513289, -47.47277479],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.238324625039507, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_6941a8cefe78270e2c6524d8daaaa055 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_304a1b2560c6f481faa43f1f52dd411d = $(`<div id="html_304a1b2560c6f481faa43f1f52dd411d" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 15.0<br>     <b>Total de acidentes:</b> 7<br>     <b>Mortos:</b> 7.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 3<br>Caminhonete: 2<br>Bicicleta: 2     </div>`)[0];
+                popup_6941a8cefe78270e2c6524d8daaaa055.setContent(html_304a1b2560c6f481faa43f1f52dd411d);
+            
+        
+
+        circle_marker_65800b9398390f56cce72268de3edda1.bindPopup(popup_6941a8cefe78270e2c6524d8daaaa055)
+        ;
+
+        
+    
+    
+            var circle_marker_8e5b1cd59e724f82387fcc2cf99dcce0 = L.circleMarker(
+                [-15.961851, -47.663284],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.49964003216865, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_70a474a9232f0d169e6274fa383d238d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d0fe098327ada989f45d26b42d6cced6 = $(`<div id="html_d0fe098327ada989f45d26b42d6cced6" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 20.0<br>     <b>Total de acidentes:</b> 16<br>     <b>Mortos:</b> 16.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 9<br>Automóvel: 7     </div>`)[0];
+                popup_70a474a9232f0d169e6274fa383d238d.setContent(html_d0fe098327ada989f45d26b42d6cced6);
+            
+        
+
+        circle_marker_8e5b1cd59e724f82387fcc2cf99dcce0.bindPopup(popup_70a474a9232f0d169e6274fa383d238d)
+        ;
+
+        
+    
+    
+            var circle_marker_accd892df97b5e621fd92141798673c3 = L.circleMarker(
+                [-16.102598, -47.498942],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.774289614064447, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_e77efb924478d54fb1419fec4a014f29 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_55ac58b86e7e4c271d2ae29e2aa1dfb6 = $(`<div id="html_55ac58b86e7e4c271d2ae29e2aa1dfb6" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 25.0<br>     <b>Total de acidentes:</b> 25<br>     <b>Mortos:</b> 25.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 16<br>Bicicleta: 6<br>Automóvel: 3     </div>`)[0];
+                popup_e77efb924478d54fb1419fec4a014f29.setContent(html_55ac58b86e7e4c271d2ae29e2aa1dfb6);
+            
+        
+
+        circle_marker_accd892df97b5e621fd92141798673c3.bindPopup(popup_e77efb924478d54fb1419fec4a014f29)
+        ;
+
+        
+    
+    
+            var circle_marker_c47401410ee3fed58a1941d77f276f10 = L.circleMarker(
+                [-15.942625, -47.731663],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.66604418446824, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_f84cf6d7e7a9dc2cc2ad8ec30ff8fc00 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f7db9d55aa88dfee4018c0a404f5351a = $(`<div id="html_f7db9d55aa88dfee4018c0a404f5351a" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 30.0<br>     <b>Total de acidentes:</b> 34<br>     <b>Mortos:</b> 34.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 17<br>Automóvel: 9<br>Bicicleta: 4     </div>`)[0];
+                popup_f84cf6d7e7a9dc2cc2ad8ec30ff8fc00.setContent(html_f7db9d55aa88dfee4018c0a404f5351a);
+            
+        
+
+        circle_marker_c47401410ee3fed58a1941d77f276f10.bindPopup(popup_f84cf6d7e7a9dc2cc2ad8ec30ff8fc00)
+        ;
+
+        
+    
+    
+            var circle_marker_aeca8996ed96faa7ead435498bc47fab = L.circleMarker(
+                [-15.94073, -47.77002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.375278407684165, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_a63961cb5a874a723e99d9718ba94db4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_764e801ef1f35ae3928b5bfabc5c497c = $(`<div id="html_764e801ef1f35ae3928b5bfabc5c497c" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 35.0<br>     <b>Total de acidentes:</b> 5<br>     <b>Mortos:</b> 5.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 3<br>Automóvel: 2     </div>`)[0];
+                popup_a63961cb5a874a723e99d9718ba94db4.setContent(html_764e801ef1f35ae3928b5bfabc5c497c);
+            
+        
+
+        circle_marker_aeca8996ed96faa7ead435498bc47fab.bindPopup(popup_a63961cb5a874a723e99d9718ba94db4)
+        ;
+
+        
+    
+    
+            var circle_marker_e6f64f7300315ed4dda00fef3d743753 = L.circleMarker(
+                [-15.933754, -47.817089],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.837730447165939, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_cee4371cec6c2b4217af0d03ed8561d7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_63a16a9e5d46b10f7b65e70973bac4e6 = $(`<div id="html_63a16a9e5d46b10f7b65e70973bac4e6" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 40.0<br>     <b>Total de acidentes:</b> 6<br>     <b>Mortos:</b> 6.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 6     </div>`)[0];
+                popup_cee4371cec6c2b4217af0d03ed8561d7.setContent(html_63a16a9e5d46b10f7b65e70973bac4e6);
+            
+        
+
+        circle_marker_e6f64f7300315ed4dda00fef3d743753.bindPopup(popup_cee4371cec6c2b4217af0d03ed8561d7)
+        ;
+
+        
+    
+    
+            var circle_marker_1ad508b7e6650aaf138d20f0822bf2f5 = L.circleMarker(
+                [-15.956645, -47.867757],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.774289614064447, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_c2dd456a102015e3a57ed82fb36a1908 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_328476a924bf491be1304a79018411ba = $(`<div id="html_328476a924bf491be1304a79018411ba" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 45.0<br>     <b>Total de acidentes:</b> 25<br>     <b>Mortos:</b> 25.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 25     </div>`)[0];
+                popup_c2dd456a102015e3a57ed82fb36a1908.setContent(html_328476a924bf491be1304a79018411ba);
+            
+        
+
+        circle_marker_1ad508b7e6650aaf138d20f0822bf2f5.bindPopup(popup_c2dd456a102015e3a57ed82fb36a1908)
+        ;
+
+        
+    
+    
+            var circle_marker_61e191fd8f01753035d64245e6233a82 = L.circleMarker(
+                [-15.97634747, -47.91034698],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.53416149104384, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_cbbd4b4ef3b7caee62065c6bccabbc12 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_08efa9922ee1c24b2c0aa38af4418017 = $(`<div id="html_08efa9922ee1c24b2c0aa38af4418017" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 50.0<br>     <b>Total de acidentes:</b> 23<br>     <b>Mortos:</b> 23.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 15<br>Caminhonete: 8     </div>`)[0];
+                popup_cbbd4b4ef3b7caee62065c6bccabbc12.setContent(html_08efa9922ee1c24b2c0aa38af4418017);
+            
+        
+
+        circle_marker_61e191fd8f01753035d64245e6233a82.bindPopup(popup_cbbd4b4ef3b7caee62065c6bccabbc12)
+        ;
+
+        
+    
+    
+            var circle_marker_fce1278b3d1e9f3e7698501ff2e19921 = L.circleMarker(
+                [-15.94811, -47.84524],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.375278407684165, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_13b6dcf30a59230746cf12f145f49428 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_68fa5ea5a516e8a7c3a7bccc26d21296 = $(`<div id="html_68fa5ea5a516e8a7c3a7bccc26d21296" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 55.0<br>     <b>Total de acidentes:</b> 5<br>     <b>Mortos:</b> 5.0<br>     <hr><b>Top Veículos:</b><br>Caminhonete: 3<br>Motocicleta: 2     </div>`)[0];
+                popup_13b6dcf30a59230746cf12f145f49428.setContent(html_68fa5ea5a516e8a7c3a7bccc26d21296);
+            
+        
+
+        circle_marker_fce1278b3d1e9f3e7698501ff2e19921.bindPopup(popup_13b6dcf30a59230746cf12f145f49428)
+        ;
+
+        
+    
+    
+            var circle_marker_5446f34a8d1beab545cc1470726d6527 = L.circleMarker(
+                [-15.9019, -41.5369],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.837730447165939, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_ffd9aabd2996e9d5d7a82c93f3f61b0d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a12c28dd8369df15d61a96c99ba56987 = $(`<div id="html_a12c28dd8369df15d61a96c99ba56987" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 210.0<br>     <b>Total de acidentes:</b> 6<br>     <b>Mortos:</b> 6.0<br>     <hr><b>Top Veículos:</b><br>Caminhonete: 6     </div>`)[0];
+                popup_ffd9aabd2996e9d5d7a82c93f3f61b0d.setContent(html_a12c28dd8369df15d61a96c99ba56987);
+            
+        
+
+        circle_marker_5446f34a8d1beab545cc1470726d6527.bindPopup(popup_ffd9aabd2996e9d5d7a82c93f3f61b0d)
+        ;
+
+        
+    
+    
+            var circle_marker_b311c4048500def1b0d9c8d1e1250436 = L.circleMarker(
+                [-15.92973805, -41.60120995],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.907755278982137, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_41e56d85403a3f82f066479e0ad4027f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_23bb7ffd61452f24508e2a9fefc09641 = $(`<div id="html_23bb7ffd61452f24508e2a9fefc09641" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 215.0<br>     <b>Total de acidentes:</b> 9<br>     <b>Mortos:</b> 9.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 9     </div>`)[0];
+                popup_41e56d85403a3f82f066479e0ad4027f.setContent(html_23bb7ffd61452f24508e2a9fefc09641);
+            
+        
+
+        circle_marker_b311c4048500def1b0d9c8d1e1250436.bindPopup(popup_41e56d85403a3f82f066479e0ad4027f)
+        ;
+
+        
+    
+    
+            var circle_marker_a8391960820236d25e483ac6e5257094 = L.circleMarker(
+                [-15.95896, -41.63528],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591673732008658, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_be3de2b1d403e6c7b89e8ca695200bfb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f1a39665f935b0f694266b47c9a0ed4a = $(`<div id="html_f1a39665f935b0f694266b47c9a0ed4a" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 220.0<br>     <b>Total de acidentes:</b> 8<br>     <b>Mortos:</b> 8.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 8     </div>`)[0];
+                popup_be3de2b1d403e6c7b89e8ca695200bfb.setContent(html_f1a39665f935b0f694266b47c9a0ed4a);
+            
+        
+
+        circle_marker_a8391960820236d25e483ac6e5257094.bindPopup(popup_be3de2b1d403e6c7b89e8ca695200bfb)
+        ;
+
+        
+    
+    
+            var circle_marker_ed8a0e2888019ba73b5ecaedb465a8c7 = L.circleMarker(
+                [-15.958212, -41.65235],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.69484807238461, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_8b8c1b8477164c02fcf20b2b01ee2b83 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1acba01ed7f7da2eef759ec67eb6008a = $(`<div id="html_1acba01ed7f7da2eef759ec67eb6008a" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 225.0<br>     <b>Total de acidentes:</b> 12<br>     <b>Mortos:</b> 12.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 12     </div>`)[0];
+                popup_8b8c1b8477164c02fcf20b2b01ee2b83.setContent(html_1acba01ed7f7da2eef759ec67eb6008a);
+            
+        
+
+        circle_marker_ed8a0e2888019ba73b5ecaedb465a8c7.bindPopup(popup_8b8c1b8477164c02fcf20b2b01ee2b83)
+        ;
+
+        
+    
+    
+            var circle_marker_04a034a2a3f1475bdef0edee98bb1309 = L.circleMarker(
+                [-15.96744613, -41.70259484],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.079441541679836, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_b977a13f5679307b52f5985d0faaa19e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b1dc4a9818b8e565d14dec2b674d1d00 = $(`<div id="html_b1dc4a9818b8e565d14dec2b674d1d00" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 230.0<br>     <b>Total de acidentes:</b> 1<br>     <b>Mortos:</b> 1.0<br>     <hr><b>Top Veículos:</b><br>Caminhonete: 1     </div>`)[0];
+                popup_b977a13f5679307b52f5985d0faaa19e.setContent(html_b1dc4a9818b8e565d14dec2b674d1d00);
+            
+        
+
+        circle_marker_04a034a2a3f1475bdef0edee98bb1309.bindPopup(popup_b977a13f5679307b52f5985d0faaa19e)
+        ;
+
+        
+    
+    
+            var circle_marker_f2af332de72b893bcc5f69763d042721 = L.circleMarker(
+                [-16.00449053, -41.77615827],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.30196161345544, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_ed4ef2b135fb4db8b096498b704faa98 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6a6b3398b99a8ce9461f60d0132279b2 = $(`<div id="html_6a6b3398b99a8ce9461f60d0132279b2" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 240.0<br>     <b>Total de acidentes:</b> 30<br>     <b>Mortos:</b> 30.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 20<br>Caminhão-trator: 10     </div>`)[0];
+                popup_ed4ef2b135fb4db8b096498b704faa98.setContent(html_6a6b3398b99a8ce9461f60d0132279b2);
+            
+        
+
+        circle_marker_f2af332de72b893bcc5f69763d042721.bindPopup(popup_ed4ef2b135fb4db8b096498b704faa98)
+        ;
+
+        
+    
+    
+            var circle_marker_8c4de3ceed886bfd98813b1b65756d28 = L.circleMarker(
+                [-15.99103453, -41.8209875],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.8283137373023, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_df007ea1fe2bf32f8bfcb8666526f7a0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9a38131b96650ffb33a6c87674575c71 = $(`<div id="html_9a38131b96650ffb33a6c87674575c71" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 245.0<br>     <b>Total de acidentes:</b> 4<br>     <b>Mortos:</b> 4.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 4     </div>`)[0];
+                popup_df007ea1fe2bf32f8bfcb8666526f7a0.setContent(html_9a38131b96650ffb33a6c87674575c71);
+            
+        
+
+        circle_marker_8c4de3ceed886bfd98813b1b65756d28.bindPopup(popup_df007ea1fe2bf32f8bfcb8666526f7a0)
+        ;
+
+        
+    
+    
+            var circle_marker_a138e7e220442b84d1a8611e117a83b3 = L.circleMarker(
+                [-15.986187185, -41.859197615],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.30196161345544, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_1bfefaa7ca2021adb35354eb24b10aef = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b2d5a602635c0520c8bb7dc60aba7bc4 = $(`<div id="html_b2d5a602635c0520c8bb7dc60aba7bc4" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 250.0<br>     <b>Total de acidentes:</b> 30<br>     <b>Mortos:</b> 30.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 15<br>Motocicleta: 15     </div>`)[0];
+                popup_1bfefaa7ca2021adb35354eb24b10aef.setContent(html_b2d5a602635c0520c8bb7dc60aba7bc4);
+            
+        
+
+        circle_marker_a138e7e220442b84d1a8611e117a83b3.bindPopup(popup_1bfefaa7ca2021adb35354eb24b10aef)
+        ;
+
+        
+    
+    
+            var circle_marker_6819b2cadd4b561ca4205666e4b78057 = L.circleMarker(
+                [-16.00758212, -41.924691],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.40648264778745, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_c4a9775ee68141a3df4c97f9c470fa64 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cc84a12122e546b0a7c5fcf7f33232d2 = $(`<div id="html_cc84a12122e546b0a7c5fcf7f33232d2" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 255.0<br>     <b>Total de acidentes:</b> 22<br>     <b>Mortos:</b> 22.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 16<br>Caminhonete: 6     </div>`)[0];
+                popup_c4a9775ee68141a3df4c97f9c470fa64.setContent(html_cc84a12122e546b0a7c5fcf7f33232d2);
+            
+        
+
+        circle_marker_6819b2cadd4b561ca4205666e4b78057.bindPopup(popup_c4a9775ee68141a3df4c97f9c470fa64)
+        ;
+
+        
+    
+    
+            var circle_marker_610fc33593d22b20811d8bd5aa33fd44 = L.circleMarker(
+                [-15.99368303, -42.01807201],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.774289614064447, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_f6ee89f5b012135c5552d487d6badd1b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b9b5b8aec5c0689de4912f76fcc5073b = $(`<div id="html_b9b5b8aec5c0689de4912f76fcc5073b" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 265.0<br>     <b>Total de acidentes:</b> 25<br>     <b>Mortos:</b> 25.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 16<br>Caminhão: 9     </div>`)[0];
+                popup_f6ee89f5b012135c5552d487d6badd1b.setContent(html_b9b5b8aec5c0689de4912f76fcc5073b);
+            
+        
+
+        circle_marker_610fc33593d22b20811d8bd5aa33fd44.bindPopup(popup_f6ee89f5b012135c5552d487d6badd1b)
+        ;
+
+        
+    
+    
+            var circle_marker_9f5d23f32b09b406cbcf7998c8309327 = L.circleMarker(
+                [-15.995717, -42.008101],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.133567313170268, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_bc48bca64f69dc539abee2de897be9a0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0070299ff84f2f5acb70defa09cce4ea = $(`<div id="html_0070299ff84f2f5acb70defa09cce4ea" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 270.0<br>     <b>Total de acidentes:</b> 20<br>     <b>Mortos:</b> 20.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 20     </div>`)[0];
+                popup_bc48bca64f69dc539abee2de897be9a0.setContent(html_0070299ff84f2f5acb70defa09cce4ea);
+            
+        
+
+        circle_marker_9f5d23f32b09b406cbcf7998c8309327.bindPopup(popup_bc48bca64f69dc539abee2de897be9a0)
+        ;
+
+        
+    
+    
+            var circle_marker_9a33c2f85f0f5ffec015858babccc61f = L.circleMarker(
+                [-16.02764697, -42.08916901],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.158883083359672, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_f8991af68c86a048fcb4465f2c6f58d1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_653fd0b6cfa4b8930934976ddaed9325 = $(`<div id="html_653fd0b6cfa4b8930934976ddaed9325" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 275.0<br>     <b>Total de acidentes:</b> 3<br>     <b>Mortos:</b> 3.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 3     </div>`)[0];
+                popup_f8991af68c86a048fcb4465f2c6f58d1.setContent(html_653fd0b6cfa4b8930934976ddaed9325);
+            
+        
+
+        circle_marker_9a33c2f85f0f5ffec015858babccc61f.bindPopup(popup_f8991af68c86a048fcb4465f2c6f58d1)
+        ;
+
+        
+    
+    
+            var circle_marker_8bb1a36739132c434d9bfff8f8b34531 = L.circleMarker(
+                [-16.04423465, -42.14383737],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.83331693749932, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_4aca582102480c6ef2e279615508f5fe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d2464d90a36df9376de086b73ac1f38a = $(`<div id="html_d2464d90a36df9376de086b73ac1f38a" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 280.0<br>     <b>Total de acidentes:</b> 18<br>     <b>Mortos:</b> 18.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 10<br>Bicicleta: 8     </div>`)[0];
+                popup_4aca582102480c6ef2e279615508f5fe.setContent(html_d2464d90a36df9376de086b73ac1f38a);
+            
+        
+
+        circle_marker_8bb1a36739132c434d9bfff8f8b34531.bindPopup(popup_4aca582102480c6ef2e279615508f5fe)
+        ;
+
+        
+    
+    
+            var circle_marker_563906e8d1497cb23a326b120cbb13a0 = L.circleMarker(
+                [-16.06341279, -42.20495019],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.203592144986466, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_b335e795775427afbca32766b2f9d973 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ce72a08e3a0889aa26048f93d38ea5d3 = $(`<div id="html_ce72a08e3a0889aa26048f93d38ea5d3" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 290.0<br>     <b>Total de acidentes:</b> 29<br>     <b>Mortos:</b> 29.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 20<br>Caminhão-trator: 9     </div>`)[0];
+                popup_b335e795775427afbca32766b2f9d973.setContent(html_ce72a08e3a0889aa26048f93d38ea5d3);
+            
+        
+
+        circle_marker_563906e8d1497cb23a326b120cbb13a0.bindPopup(popup_b335e795775427afbca32766b2f9d973)
+        ;
+
+        
+    
+    
+            var circle_marker_1b7fd48120c49c986e405f17b23e6bb1 = L.circleMarker(
+                [-16.12787378, -42.22597419],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.49964003216865, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_6e3310de91cacb58b8b4c5307bb7c9e6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_37d829a5db4b97529e5422f0d21a21b9 = $(`<div id="html_37d829a5db4b97529e5422f0d21a21b9" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 295.0<br>     <b>Total de acidentes:</b> 16<br>     <b>Mortos:</b> 16.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 10<br>Bicicleta: 6     </div>`)[0];
+                popup_6e3310de91cacb58b8b4c5307bb7c9e6.setContent(html_37d829a5db4b97529e5422f0d21a21b9);
+            
+        
+
+        circle_marker_1b7fd48120c49c986e405f17b23e6bb1.bindPopup(popup_6e3310de91cacb58b8b4c5307bb7c9e6)
+        ;
+
+        
+    
+    
+            var circle_marker_583720bb9bec38edb15ae18847d91632 = L.circleMarker(
+                [-16.1354, -42.27795],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.8283137373023, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_b490b1000945538980dbe848fca6ba50 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8506029bc94c8fc6ba7566726c7d8209 = $(`<div id="html_8506029bc94c8fc6ba7566726c7d8209" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 305.0<br>     <b>Total de acidentes:</b> 4<br>     <b>Mortos:</b> 4.0<br>     <hr><b>Top Veículos:</b><br>Camioneta: 4     </div>`)[0];
+                popup_b490b1000945538980dbe848fca6ba50.setContent(html_8506029bc94c8fc6ba7566726c7d8209);
+            
+        
+
+        circle_marker_583720bb9bec38edb15ae18847d91632.bindPopup(popup_b490b1000945538980dbe848fca6ba50)
+        ;
+
+        
+    
+    
+            var circle_marker_1fc3b3f8fb712320daa82c08b1bb093e = L.circleMarker(
+                [-16.16620056, -42.31993003],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.69484807238461, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_ccaddd74ebba40524e476b395082c684 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_03ba0d2fb68a21698d8833ccb7cbe35a = $(`<div id="html_03ba0d2fb68a21698d8833ccb7cbe35a" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 310.0<br>     <b>Total de acidentes:</b> 12<br>     <b>Mortos:</b> 12.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 12     </div>`)[0];
+                popup_ccaddd74ebba40524e476b395082c684.setContent(html_03ba0d2fb68a21698d8833ccb7cbe35a);
+            
+        
+
+        circle_marker_1fc3b3f8fb712320daa82c08b1bb093e.bindPopup(popup_ccaddd74ebba40524e476b395082c684)
+        ;
+
+        
+    
+    
+            var circle_marker_dc2fee7a35b0f46a95e73711b174f904 = L.circleMarker(
+                [-16.17279, -42.33262],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.69484807238461, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_9de6cd53c3238f5b0f46239a8033c65a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_242a58d3dd3c36ba26c2464a80c660ec = $(`<div id="html_242a58d3dd3c36ba26c2464a80c660ec" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 315.0<br>     <b>Total de acidentes:</b> 12<br>     <b>Mortos:</b> 12.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 12     </div>`)[0];
+                popup_9de6cd53c3238f5b0f46239a8033c65a.setContent(html_242a58d3dd3c36ba26c2464a80c660ec);
+            
+        
+
+        circle_marker_dc2fee7a35b0f46a95e73711b174f904.bindPopup(popup_9de6cd53c3238f5b0f46239a8033c65a)
+        ;
+
+        
+    
+    
+            var circle_marker_966cf053c35a96bc189a4c731e60123d = L.circleMarker(
+                [-16.18343625, -42.33650208],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.69484807238461, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_d560e010556b101aaa4407ea6e7c5ca7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_66567c31ce05a67fe5e08dcaa2d31fdb = $(`<div id="html_66567c31ce05a67fe5e08dcaa2d31fdb" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 320.0<br>     <b>Total de acidentes:</b> 12<br>     <b>Mortos:</b> 12.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 12     </div>`)[0];
+                popup_d560e010556b101aaa4407ea6e7c5ca7.setContent(html_66567c31ce05a67fe5e08dcaa2d31fdb);
+            
+        
+
+        circle_marker_966cf053c35a96bc189a4c731e60123d.bindPopup(popup_d560e010556b101aaa4407ea6e7c5ca7)
+        ;
+
+        
+    
+    
+            var circle_marker_a1bc1ccd179666f01786f16d7ccd2151 = L.circleMarker(
+                [-16.25361768, -42.40072003],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.837730447165939, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_eea09b61157d0fc7d1dc62d135e218bb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9d85cfa63f236757c11f2483fe35dad5 = $(`<div id="html_9d85cfa63f236757c11f2483fe35dad5" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 325.0<br>     <b>Total de acidentes:</b> 6<br>     <b>Mortos:</b> 6.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 6     </div>`)[0];
+                popup_eea09b61157d0fc7d1dc62d135e218bb.setContent(html_9d85cfa63f236757c11f2483fe35dad5);
+            
+        
+
+        circle_marker_a1bc1ccd179666f01786f16d7ccd2151.bindPopup(popup_eea09b61157d0fc7d1dc62d135e218bb)
+        ;
+
+        
+    
+    
+            var circle_marker_e147ae671375d000d7f4a5cc32c7e1cd = L.circleMarker(
+                [-16.26293804, -42.410249],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.146079904021644, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_80c720c514d164b4079ecb1c0f78b36e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a6ca272b7e209fade0b14b03565c6d34 = $(`<div id="html_a6ca272b7e209fade0b14b03565c6d34" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 330.0<br>     <b>Total de acidentes:</b> 79<br>     <b>Mortos:</b> 79.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 49<br>Caminhão: 30     </div>`)[0];
+                popup_80c720c514d164b4079ecb1c0f78b36e.setContent(html_a6ca272b7e209fade0b14b03565c6d34);
+            
+        
+
+        circle_marker_e147ae671375d000d7f4a5cc32c7e1cd.bindPopup(popup_80c720c514d164b4079ecb1c0f78b36e)
+        ;
+
+        
+    
+    
+            var circle_marker_49cb753bb3258d2c743522e29d01d1bd = L.circleMarker(
+                [-16.25629, -42.45367],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.158883083359672, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_6dd5d8003974cbe3233b2a34a1d598ca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f53f52e764a8cb1b2208f831c160fb88 = $(`<div id="html_f53f52e764a8cb1b2208f831c160fb88" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 335.0<br>     <b>Total de acidentes:</b> 3<br>     <b>Mortos:</b> 3.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 3     </div>`)[0];
+                popup_6dd5d8003974cbe3233b2a34a1d598ca.setContent(html_f53f52e764a8cb1b2208f831c160fb88);
+            
+        
+
+        circle_marker_49cb753bb3258d2c743522e29d01d1bd.bindPopup(popup_6dd5d8003974cbe3233b2a34a1d598ca)
+        ;
+
+        
+    
+    
+            var circle_marker_f7e9b9e8e06f65f20f37f65168378467 = L.circleMarker(
+                [-16.26358602, -42.50356998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.375278407684165, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_940c9cbcc6ee12badc65fb3739748de1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d7ac87e1663ffa0d6f42c6c06df2643b = $(`<div id="html_d7ac87e1663ffa0d6f42c6c06df2643b" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 340.0<br>     <b>Total de acidentes:</b> 5<br>     <b>Mortos:</b> 5.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 3<br>Caminhão: 2     </div>`)[0];
+                popup_940c9cbcc6ee12badc65fb3739748de1.setContent(html_d7ac87e1663ffa0d6f42c6c06df2643b);
+            
+        
+
+        circle_marker_f7e9b9e8e06f65f20f37f65168378467.bindPopup(popup_940c9cbcc6ee12badc65fb3739748de1)
+        ;
+
+        
+    
+    
+            var circle_marker_23c548cb4c49a34f62cd99872f1197ab = L.circleMarker(
+                [-16.27293323, -42.53130451],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.133567313170268, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_5ae803029a9b67061d4eeda362886167 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6c9563500a82a160c5a89e72290f549c = $(`<div id="html_6c9563500a82a160c5a89e72290f549c" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 345.0<br>     <b>Total de acidentes:</b> 20<br>     <b>Mortos:</b> 20.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 20     </div>`)[0];
+                popup_5ae803029a9b67061d4eeda362886167.setContent(html_6c9563500a82a160c5a89e72290f549c);
+            
+        
+
+        circle_marker_23c548cb4c49a34f62cd99872f1197ab.bindPopup(popup_5ae803029a9b67061d4eeda362886167)
+        ;
+
+        
+    
+    
+            var circle_marker_7c315f2e3d989cee73165fafec781c15 = L.circleMarker(
+                [-16.27666, -42.55329],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.238324625039507, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_73450d47b8a5980c95db43ee9b128374 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2673ead19fb072255015637a4ad9caa3 = $(`<div id="html_2673ead19fb072255015637a4ad9caa3" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 350.0<br>     <b>Total de acidentes:</b> 7<br>     <b>Mortos:</b> 7.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 6<br>Motocicleta: 1     </div>`)[0];
+                popup_73450d47b8a5980c95db43ee9b128374.setContent(html_2673ead19fb072255015637a4ad9caa3);
+            
+        
+
+        circle_marker_7c315f2e3d989cee73165fafec781c15.bindPopup(popup_73450d47b8a5980c95db43ee9b128374)
+        ;
+
+        
+    
+    
+            var circle_marker_8c9b08d622537825452d64a26d6ccaba = L.circleMarker(
+                [-16.26522431, -42.57628001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.140716200112923, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_cefbcf54ff50176e56df2898c1e66d85 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_07ab668ef6eb041790b1723fbda3beb8 = $(`<div id="html_07ab668ef6eb041790b1723fbda3beb8" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 355.0<br>     <b>Total de acidentes:</b> 40<br>     <b>Mortos:</b> 40.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 30<br>Automóvel: 6<br>Caminhão-trator: 4     </div>`)[0];
+                popup_cefbcf54ff50176e56df2898c1e66d85.setContent(html_07ab668ef6eb041790b1723fbda3beb8);
+            
+        
+
+        circle_marker_8c9b08d622537825452d64a26d6ccaba.bindPopup(popup_cefbcf54ff50176e56df2898c1e66d85)
+        ;
+
+        
+    
+    
+            var circle_marker_b28090c98d88cab2baaedee5f82ca12b = L.circleMarker(
+                [-16.25457906, -42.63200692],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.454719949364002, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_31355763260b47771362c8dd06cabb32 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_565114bf4be587f59d551a9e0e9ddcbf = $(`<div id="html_565114bf4be587f59d551a9e0e9ddcbf" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 360.0<br>     <b>Total de acidentes:</b> 11<br>     <b>Mortos:</b> 11.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 9<br>Automóvel: 2     </div>`)[0];
+                popup_31355763260b47771362c8dd06cabb32.setContent(html_565114bf4be587f59d551a9e0e9ddcbf);
+            
+        
+
+        circle_marker_b28090c98d88cab2baaedee5f82ca12b.bindPopup(popup_31355763260b47771362c8dd06cabb32)
+        ;
+
+        
+    
+    
+            var circle_marker_56a439908163419ab770887624e0c242 = L.circleMarker(
+                [-16.272048, -42.658164],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.454719949364002, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_e97d8ea7f6f87db026a2b4216c857206 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f8bbf51aae40301c674cbc1a46ba8768 = $(`<div id="html_f8bbf51aae40301c674cbc1a46ba8768" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 365.0<br>     <b>Total de acidentes:</b> 11<br>     <b>Mortos:</b> 11.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 6<br>Automóvel: 5     </div>`)[0];
+                popup_e97d8ea7f6f87db026a2b4216c857206.setContent(html_f8bbf51aae40301c674cbc1a46ba8768);
+            
+        
+
+        circle_marker_56a439908163419ab770887624e0c242.bindPopup(popup_e97d8ea7f6f87db026a2b4216c857206)
+        ;
+
+        
+    
+    
+            var circle_marker_eae4ac6c1fa0a52c83aae756f6d9153d = L.circleMarker(
+                [-16.29735398, -42.765631],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.987196820661973, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_38fe06ea3011d9f70899448dea20a5b7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_19497c32221213504e00e0015a55b554 = $(`<div id="html_19497c32221213504e00e0015a55b554" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 370.0<br>     <b>Total de acidentes:</b> 19<br>     <b>Mortos:</b> 19.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 19     </div>`)[0];
+                popup_38fe06ea3011d9f70899448dea20a5b7.setContent(html_19497c32221213504e00e0015a55b554);
+            
+        
+
+        circle_marker_eae4ac6c1fa0a52c83aae756f6d9153d.bindPopup(popup_38fe06ea3011d9f70899448dea20a5b7)
+        ;
+
+        
+    
+    
+            var circle_marker_158d8cefba5f4c82409f04964ebcde30 = L.circleMarker(
+                [-16.298547, -42.74137],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.69484807238461, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_60929771d6e1ad31dca0bac34ad2f909 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7501aa24ce22e7b1ed6c94fc18c5e703 = $(`<div id="html_7501aa24ce22e7b1ed6c94fc18c5e703" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 375.0<br>     <b>Total de acidentes:</b> 12<br>     <b>Mortos:</b> 12.0<br>     <hr><b>Top Veículos:</b><br>Caminhonete: 12     </div>`)[0];
+                popup_60929771d6e1ad31dca0bac34ad2f909.setContent(html_7501aa24ce22e7b1ed6c94fc18c5e703);
+            
+        
+
+        circle_marker_158d8cefba5f4c82409f04964ebcde30.bindPopup(popup_60929771d6e1ad31dca0bac34ad2f909)
+        ;
+
+        
+    
+    
+            var circle_marker_583addc803975b4912841701ecbb15b7 = L.circleMarker(
+                [-16.28985227, -42.79190313],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.079441541679836, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_44c9ca4b35b5bc7939683c3c33cfcf39 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_acbeaba99f66a279039e70889d971cdc = $(`<div id="html_acbeaba99f66a279039e70889d971cdc" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 380.0<br>     <b>Total de acidentes:</b> 1<br>     <b>Mortos:</b> 1.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 1     </div>`)[0];
+                popup_44c9ca4b35b5bc7939683c3c33cfcf39.setContent(html_acbeaba99f66a279039e70889d971cdc);
+            
+        
+
+        circle_marker_583addc803975b4912841701ecbb15b7.bindPopup(popup_44c9ca4b35b5bc7939683c3c33cfcf39)
+        ;
+
+        
+    
+    
+            var circle_marker_bc9515980f2f6f859e6f72b72094c402 = L.circleMarker(
+                [-16.21368559, -42.87757874],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.193685818395112, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_58af4026a2ea03dbbcb2d386e3385e03 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_beeab2ecce1482433dcd36559288fa52 = $(`<div id="html_beeab2ecce1482433dcd36559288fa52" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 395.0<br>     <b>Total de acidentes:</b> 10<br>     <b>Mortos:</b> 10.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 8<br>Caminhonete: 2     </div>`)[0];
+                popup_58af4026a2ea03dbbcb2d386e3385e03.setContent(html_beeab2ecce1482433dcd36559288fa52);
+            
+        
+
+        circle_marker_bc9515980f2f6f859e6f72b72094c402.bindPopup(popup_58af4026a2ea03dbbcb2d386e3385e03)
+        ;
+
+        
+    
+    
+            var circle_marker_bfefc7df8e31843264f4f149d86e6f65 = L.circleMarker(
+                [-16.24158921, -42.92540287],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.987196820661973, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_0d2804348aa825ae30791f0dcdb725dd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_461f92f5a6a6817262571fc42a46fe55 = $(`<div id="html_461f92f5a6a6817262571fc42a46fe55" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 400.0<br>     <b>Total de acidentes:</b> 19<br>     <b>Mortos:</b> 19.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 12<br>Motocicleta: 7     </div>`)[0];
+                popup_0d2804348aa825ae30791f0dcdb725dd.setContent(html_461f92f5a6a6817262571fc42a46fe55);
+            
+        
+
+        circle_marker_bfefc7df8e31843264f4f149d86e6f65.bindPopup(popup_0d2804348aa825ae30791f0dcdb725dd)
+        ;
+
+        
+    
+    
+            var circle_marker_a48423fb8269b8774711afb2b1fe7a71 = L.circleMarker(
+                [-16.26885467, -42.97339413],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.29583686600433, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_90bbb16ade01c6b309696b168da5ab5b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_43be687c0bec90448db76a0db783fa97 = $(`<div id="html_43be687c0bec90448db76a0db783fa97" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 405.0<br>     <b>Total de acidentes:</b> 2<br>     <b>Mortos:</b> 2.0<br>     <hr><b>Top Veículos:</b><br>Caminhonete: 2     </div>`)[0];
+                popup_90bbb16ade01c6b309696b168da5ab5b.setContent(html_43be687c0bec90448db76a0db783fa97);
+            
+        
+
+        circle_marker_a48423fb8269b8774711afb2b1fe7a71.bindPopup(popup_90bbb16ade01c6b309696b168da5ab5b)
+        ;
+
+        
+    
+    
+            var circle_marker_c807d538f6bbf10cd634f435ae481fc3 = L.circleMarker(
+                [-16.2964018, -43.04220808],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.273127360074948, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_e26898de4e8a39c8211e2728f07134c7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4fad3ea310c771caa5d2ccb1b4a77f69 = $(`<div id="html_4fad3ea310c771caa5d2ccb1b4a77f69" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 415.0<br>     <b>Total de acidentes:</b> 21<br>     <b>Mortos:</b> 21.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 17<br>Caminhão-trator: 4     </div>`)[0];
+                popup_e26898de4e8a39c8211e2728f07134c7.setContent(html_4fad3ea310c771caa5d2ccb1b4a77f69);
+            
+        
+
+        circle_marker_c807d538f6bbf10cd634f435ae481fc3.bindPopup(popup_e26898de4e8a39c8211e2728f07134c7)
+        ;
+
+        
+    
+    
+            var circle_marker_c07e2bfbea4fae9222485803770db3e4 = L.circleMarker(
+                [-16.33690716, -43.13798285],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.04639368137266, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_b0e355a4bc9a39c0e109bbed62b59f1a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3c86c352fe1a7dfc1e4fdcad777597e1 = $(`<div id="html_3c86c352fe1a7dfc1e4fdcad777597e1" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 425.0<br>     <b>Total de acidentes:</b> 107<br>     <b>Mortos:</b> 107.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 63<br>Caminhão: 41<br>Automóvel: 3     </div>`)[0];
+                popup_b0e355a4bc9a39c0e109bbed62b59f1a.setContent(html_3c86c352fe1a7dfc1e4fdcad777597e1);
+            
+        
+
+        circle_marker_c07e2bfbea4fae9222485803770db3e4.bindPopup(popup_b0e355a4bc9a39c0e109bbed62b59f1a)
+        ;
+
+        
+    
+    
+            var circle_marker_1173fcdba62b324b5ff01154d75aec32 = L.circleMarker(
+                [-16.4185062, -43.26071281],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.375278407684165, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_83068758212f73a41b948f1066a55f4d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_28cc88ce6c36bc67a8d8cf99d16ca46b = $(`<div id="html_28cc88ce6c36bc67a8d8cf99d16ca46b" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 440.0<br>     <b>Total de acidentes:</b> 5<br>     <b>Mortos:</b> 5.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 3<br>Caminhão-trator: 2     </div>`)[0];
+                popup_83068758212f73a41b948f1066a55f4d.setContent(html_28cc88ce6c36bc67a8d8cf99d16ca46b);
+            
+        
+
+        circle_marker_1173fcdba62b324b5ff01154d75aec32.bindPopup(popup_83068758212f73a41b948f1066a55f4d)
+        ;
+
+        
+    
+    
+            var circle_marker_0a26a55c6f0d22a945a8706086fece68 = L.circleMarker(
+                [-16.420528, -43.28967],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.48952268439944, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_a1e75d8bfbcf68a3c681a0c480006ced = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_48a8e9f552a884bf9198efc606a1de34 = $(`<div id="html_48a8e9f552a884bf9198efc606a1de34" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 445.0<br>     <b>Total de acidentes:</b> 32<br>     <b>Mortos:</b> 32.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 14<br>Caminhão: 14<br>Automóvel: 4     </div>`)[0];
+                popup_a1e75d8bfbcf68a3c681a0c480006ced.setContent(html_48a8e9f552a884bf9198efc606a1de34);
+            
+        
+
+        circle_marker_0a26a55c6f0d22a945a8706086fece68.bindPopup(popup_a1e75d8bfbcf68a3c681a0c480006ced)
+        ;
+
+        
+    
+    
+            var circle_marker_71de897e691cb6d3c24b82694cd30fa7 = L.circleMarker(
+                [-16.45710399, -43.40386502],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.12415060330663, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_9c3779a3dcede18250ef3258310ccdab = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cd5168fa2c5169927212c6e497c5b8c6 = $(`<div id="html_cd5168fa2c5169927212c6e497c5b8c6" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 465.0<br>     <b>Total de acidentes:</b> 14<br>     <b>Mortos:</b> 14.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 7<br>Automóvel: 3<br>Ônibus: 2     </div>`)[0];
+                popup_9c3779a3dcede18250ef3258310ccdab.setContent(html_cd5168fa2c5169927212c6e497c5b8c6);
+            
+        
+
+        circle_marker_71de897e691cb6d3c24b82694cd30fa7.bindPopup(popup_9c3779a3dcede18250ef3258310ccdab)
+        ;
+
+        
+    
+    
+            var circle_marker_183717426cbf0ffedd7849d04277eb9a = L.circleMarker(
+                [-16.47012768, -43.43947986],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.286521804393267, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_291bdfa8f94ccdb8d7bf6b84773df34a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_03eb96b9fd966d26476d4655fd5f81bb = $(`<div id="html_03eb96b9fd966d26476d4655fd5f81bb" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 470.0<br>     <b>Total de acidentes:</b> 116<br>     <b>Mortos:</b> 116.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 66<br>Caminhão-trator: 31<br>Automóvel: 8     </div>`)[0];
+                popup_291bdfa8f94ccdb8d7bf6b84773df34a.setContent(html_03eb96b9fd966d26476d4655fd5f81bb);
+            
+        
+
+        circle_marker_183717426cbf0ffedd7849d04277eb9a.bindPopup(popup_291bdfa8f94ccdb8d7bf6b84773df34a)
+        ;
+
+        
+    
+    
+            var circle_marker_52b8b625a5e9ef6c19ca9d94bd798422 = L.circleMarker(
+                [-16.47033272, -43.48431],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.613603032723674, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_b8bfdb648f26298588b3ddb46c0c1c6a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c3c7e88ba5973dc32eed2313a4ccfe15 = $(`<div id="html_c3c7e88ba5973dc32eed2313a4ccfe15" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 475.0<br>     <b>Total de acidentes:</b> 47<br>     <b>Mortos:</b> 47.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 20<br>Caminhão: 8<br>Motocicleta: 7     </div>`)[0];
+                popup_b8bfdb648f26298588b3ddb46c0c1c6a.setContent(html_c3c7e88ba5973dc32eed2313a4ccfe15);
+            
+        
+
+        circle_marker_52b8b625a5e9ef6c19ca9d94bd798422.bindPopup(popup_b8bfdb648f26298588b3ddb46c0c1c6a)
+        ;
+
+        
+    
+    
+            var circle_marker_e7268debc9fcf08a183642910efb9b20 = L.circleMarker(
+                [-16.51784211, -43.55947992],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591673732008658, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_caf6dd904fb06bba79a1b431f69cf079 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_05ecb2296055e3820ed11c1f0fe7464d = $(`<div id="html_05ecb2296055e3820ed11c1f0fe7464d" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 485.0<br>     <b>Total de acidentes:</b> 8<br>     <b>Mortos:</b> 8.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 6<br>Bicicleta: 2     </div>`)[0];
+                popup_caf6dd904fb06bba79a1b431f69cf079.setContent(html_05ecb2296055e3820ed11c1f0fe7464d);
+            
+        
+
+        circle_marker_e7268debc9fcf08a183642910efb9b20.bindPopup(popup_caf6dd904fb06bba79a1b431f69cf079)
+        ;
+
+        
+    
+    
+            var circle_marker_1f6ef160ddc50de644461317f69857f8 = L.circleMarker(
+                [-16.57595775, -43.62830028],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.837730447165939, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_cbabbc86af9109dcd2310a35ecc7b95d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_01a34ef8546292b35345b055ced77077 = $(`<div id="html_01a34ef8546292b35345b055ced77077" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 495.0<br>     <b>Total de acidentes:</b> 6<br>     <b>Mortos:</b> 6.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 6     </div>`)[0];
+                popup_cbabbc86af9109dcd2310a35ecc7b95d.setContent(html_01a34ef8546292b35345b055ced77077);
+            
+        
+
+        circle_marker_1f6ef160ddc50de644461317f69857f8.bindPopup(popup_cbabbc86af9109dcd2310a35ecc7b95d)
+        ;
+
+        
+    
+    
+            var circle_marker_70bb3994d07f30de2b73bfb8a3947bba = L.circleMarker(
+                [-16.597915, -43.644385],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591673732008658, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_06cdcfde2f013d65f77d708b266ca9a2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dec6363175b1af81fc3071d4b3f92234 = $(`<div id="html_dec6363175b1af81fc3071d4b3f92234" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 500.0<br>     <b>Total de acidentes:</b> 8<br>     <b>Mortos:</b> 8.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 6<br>Caminhão-trator: 2     </div>`)[0];
+                popup_06cdcfde2f013d65f77d708b266ca9a2.setContent(html_dec6363175b1af81fc3071d4b3f92234);
+            
+        
+
+        circle_marker_70bb3994d07f30de2b73bfb8a3947bba.bindPopup(popup_06cdcfde2f013d65f77d708b266ca9a2)
+        ;
+
+        
+    
+    
+            var circle_marker_ff0edf31b94a5145e395d608292c912d = L.circleMarker(
+                [-16.61894941, -43.6887828],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.917171988845775, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_75c332dcdbeb250ee808c72d31494a91 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_76f28bccaf65ee392746e9e308381799 = $(`<div id="html_76f28bccaf65ee392746e9e308381799" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 505.0<br>     <b>Total de acidentes:</b> 13<br>     <b>Mortos:</b> 13.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 8<br>Caminhonete: 5     </div>`)[0];
+                popup_75c332dcdbeb250ee808c72d31494a91.setContent(html_76f28bccaf65ee392746e9e308381799);
+            
+        
+
+        circle_marker_ff0edf31b94a5145e395d608292c912d.bindPopup(popup_75c332dcdbeb250ee808c72d31494a91)
+        ;
+
+        
+    
+    
+            var circle_marker_dbf64ea5dded2f74df3393dbe110f550 = L.circleMarker(
+                [-16.647395, -43.710057],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.203592144986466, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_5335a4c13ffa9a208b81f6f571a3ec32 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4f282d82782aa64ebddc1feb7f458930 = $(`<div id="html_4f282d82782aa64ebddc1feb7f458930" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 510.0<br>     <b>Total de acidentes:</b> 29<br>     <b>Mortos:</b> 29.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 22<br>Caminhonete: 3<br>Caminhão: 2     </div>`)[0];
+                popup_5335a4c13ffa9a208b81f6f571a3ec32.setContent(html_4f282d82782aa64ebddc1feb7f458930);
+            
+        
+
+        circle_marker_dbf64ea5dded2f74df3393dbe110f550.bindPopup(popup_5335a4c13ffa9a208b81f6f571a3ec32)
+        ;
+
+        
+    
+    
+            var circle_marker_83a50dee831bb24a4d1b15715571c24f = L.circleMarker(
+                [-16.6601231, -43.7485765],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.40648264778745, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_12c4f5f8bbf9caaff173302deb922c32 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_03f6a3c468efee28fcc490e00e465720 = $(`<div id="html_03f6a3c468efee28fcc490e00e465720" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 515.0<br>     <b>Total de acidentes:</b> 22<br>     <b>Mortos:</b> 22.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 12<br>Motocicleta: 9<br>Automóvel: 1     </div>`)[0];
+                popup_12c4f5f8bbf9caaff173302deb922c32.setContent(html_03f6a3c468efee28fcc490e00e465720);
+            
+        
+
+        circle_marker_83a50dee831bb24a4d1b15715571c24f.bindPopup(popup_12c4f5f8bbf9caaff173302deb922c32)
+        ;
+
+        
+    
+    
+            var circle_marker_693f406d06e63bca9d34779e0834ea50 = L.circleMarker(
+                [-16.66570005, -43.78533097],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.140716200112923, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1c54d59f565fd41597e322b6b4059e67);
+        
+    
+        var popup_cdda2e199a1df317ff5a3dd5f0ff4950 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_096df9e272513cd687382c49aa8baaa0 = $(`<div id="html_096df9e272513cd687382c49aa8baaa0" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 520.0<br>     <b>Total de acidentes:</b> 40<br>     <b>Mortos:</b> 40.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 21<br>Micro-ônibus: 10<br>Bicicleta: 8     </div>`)[0];
+                popup_cdda2e199a1df317ff5a3dd5f0ff4950.setContent(html_096df9e272513cd687382c49aa8baaa0);
+            
+        
+
+        circle_marker_693f406d06e63bca9d34779e0834ea50.bindPopup(popup_cdda2e199a1df317ff5a3dd5f0ff4950)
+        ;
+
+        
+    
+    
+            marker_cluster_1c54d59f565fd41597e322b6b4059e67.addTo(map_40e48591c265d4979c650b6a46dcf57a);
+        
+    
+            var marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_13946be946e228870b62b0ce8be26e76 = L.circleMarker(
+                [-15.92973805, -41.60120995],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.907755278982137, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_2d11efe2370baae40a41af45f080ae5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2706c8ee90c022896c5813a8e43ee14a = $(`<div id="html_2706c8ee90c022896c5813a8e43ee14a" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 215.0<br>     <b>Total de acidentes:</b> 9<br>     <b>Mortos:</b> 9.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 9     </div>`)[0];
+                popup_2d11efe2370baae40a41af45f080ae5b.setContent(html_2706c8ee90c022896c5813a8e43ee14a);
+            
+        
+
+        circle_marker_13946be946e228870b62b0ce8be26e76.bindPopup(popup_2d11efe2370baae40a41af45f080ae5b)
+        ;
+
+        
+    
+    
+            var circle_marker_7f1eb5bb2f5661cd9cd6a0a3bdbfacc0 = L.circleMarker(
+                [-16.00449053, -41.77615827],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.30196161345544, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_010d9c0fd1560731bd3e776433e3ace7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f14b0970243ae48db00ad35dafd28cd5 = $(`<div id="html_f14b0970243ae48db00ad35dafd28cd5" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 240.0<br>     <b>Total de acidentes:</b> 30<br>     <b>Mortos:</b> 30.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 20<br>Caminhão-trator: 10     </div>`)[0];
+                popup_010d9c0fd1560731bd3e776433e3ace7.setContent(html_f14b0970243ae48db00ad35dafd28cd5);
+            
+        
+
+        circle_marker_7f1eb5bb2f5661cd9cd6a0a3bdbfacc0.bindPopup(popup_010d9c0fd1560731bd3e776433e3ace7)
+        ;
+
+        
+    
+    
+            var circle_marker_621ba3b3850c5049cdf83c59a6e01fd4 = L.circleMarker(
+                [-15.99103453, -41.8209875],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.8283137373023, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_78bbe53afdb03f7b56cd6442b7542961 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aaac7de5c78c4187d6f1848800a81821 = $(`<div id="html_aaac7de5c78c4187d6f1848800a81821" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 245.0<br>     <b>Total de acidentes:</b> 4<br>     <b>Mortos:</b> 4.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 4     </div>`)[0];
+                popup_78bbe53afdb03f7b56cd6442b7542961.setContent(html_aaac7de5c78c4187d6f1848800a81821);
+            
+        
+
+        circle_marker_621ba3b3850c5049cdf83c59a6e01fd4.bindPopup(popup_78bbe53afdb03f7b56cd6442b7542961)
+        ;
+
+        
+    
+    
+            var circle_marker_149f53c9ecd4cf94375f13c8ba748777 = L.circleMarker(
+                [-15.986187185, -41.859197615],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.30196161345544, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_8cfb3ceabcfd291345987f6684f3d5f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3c7467a6dea8c2c8cb0efbf70bbd51f = $(`<div id="html_e3c7467a6dea8c2c8cb0efbf70bbd51f" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 250.0<br>     <b>Total de acidentes:</b> 30<br>     <b>Mortos:</b> 30.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 15<br>Motocicleta: 15     </div>`)[0];
+                popup_8cfb3ceabcfd291345987f6684f3d5f4.setContent(html_e3c7467a6dea8c2c8cb0efbf70bbd51f);
+            
+        
+
+        circle_marker_149f53c9ecd4cf94375f13c8ba748777.bindPopup(popup_8cfb3ceabcfd291345987f6684f3d5f4)
+        ;
+
+        
+    
+    
+            var circle_marker_609d8277a9a097022f141cd86acabad1 = L.circleMarker(
+                [-16.00758212, -41.924691],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.40648264778745, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_c96643cd828675ae285aba002d3fa58d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b54ad1845ec73b76d78755f761ef07f = $(`<div id="html_5b54ad1845ec73b76d78755f761ef07f" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 255.0<br>     <b>Total de acidentes:</b> 22<br>     <b>Mortos:</b> 22.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 16<br>Caminhonete: 6     </div>`)[0];
+                popup_c96643cd828675ae285aba002d3fa58d.setContent(html_5b54ad1845ec73b76d78755f761ef07f);
+            
+        
+
+        circle_marker_609d8277a9a097022f141cd86acabad1.bindPopup(popup_c96643cd828675ae285aba002d3fa58d)
+        ;
+
+        
+    
+    
+            var circle_marker_ab58d49c28fc3e3fba634129d4dcaa75 = L.circleMarker(
+                [-15.99368303, -42.01807201],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.774289614064447, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_ec122d8b4c7bcd2ffe7cef0eebe4277d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c536d9d395383f2198a7680505490803 = $(`<div id="html_c536d9d395383f2198a7680505490803" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 265.0<br>     <b>Total de acidentes:</b> 25<br>     <b>Mortos:</b> 25.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 16<br>Caminhão: 9     </div>`)[0];
+                popup_ec122d8b4c7bcd2ffe7cef0eebe4277d.setContent(html_c536d9d395383f2198a7680505490803);
+            
+        
+
+        circle_marker_ab58d49c28fc3e3fba634129d4dcaa75.bindPopup(popup_ec122d8b4c7bcd2ffe7cef0eebe4277d)
+        ;
+
+        
+    
+    
+            var circle_marker_3d5d974965586ffc5321a9621111d3ab = L.circleMarker(
+                [-16.04423465, -42.14383737],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.83331693749932, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_54bf49b718f5bbba8b1875c9c1ffbc99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f2ad4eb7c596de7b8744903482314c4 = $(`<div id="html_7f2ad4eb7c596de7b8744903482314c4" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 280.0<br>     <b>Total de acidentes:</b> 18<br>     <b>Mortos:</b> 18.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 10<br>Bicicleta: 8     </div>`)[0];
+                popup_54bf49b718f5bbba8b1875c9c1ffbc99.setContent(html_7f2ad4eb7c596de7b8744903482314c4);
+            
+        
+
+        circle_marker_3d5d974965586ffc5321a9621111d3ab.bindPopup(popup_54bf49b718f5bbba8b1875c9c1ffbc99)
+        ;
+
+        
+    
+    
+            var circle_marker_35283dc7f821deea15ff3f0e39fd44f7 = L.circleMarker(
+                [-16.06341279, -42.20495019],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.203592144986466, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_434a555dc35e47424526d41b2866613c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad63a353ced8552029c4277eba787b62 = $(`<div id="html_ad63a353ced8552029c4277eba787b62" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 290.0<br>     <b>Total de acidentes:</b> 29<br>     <b>Mortos:</b> 29.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 20<br>Caminhão-trator: 9     </div>`)[0];
+                popup_434a555dc35e47424526d41b2866613c.setContent(html_ad63a353ced8552029c4277eba787b62);
+            
+        
+
+        circle_marker_35283dc7f821deea15ff3f0e39fd44f7.bindPopup(popup_434a555dc35e47424526d41b2866613c)
+        ;
+
+        
+    
+    
+            var circle_marker_94d93152214c63eb7f13a647f21819e4 = L.circleMarker(
+                [-16.18343625, -42.33650208],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.69484807238461, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_35b82a55219bfe1ce273d6bd6d82155b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e11a6010f07edd919fefae4b7b8a299 = $(`<div id="html_3e11a6010f07edd919fefae4b7b8a299" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 320.0<br>     <b>Total de acidentes:</b> 12<br>     <b>Mortos:</b> 12.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 12     </div>`)[0];
+                popup_35b82a55219bfe1ce273d6bd6d82155b.setContent(html_3e11a6010f07edd919fefae4b7b8a299);
+            
+        
+
+        circle_marker_94d93152214c63eb7f13a647f21819e4.bindPopup(popup_35b82a55219bfe1ce273d6bd6d82155b)
+        ;
+
+        
+    
+    
+            var circle_marker_0c8ed4c7e0acc2e456478036ce5906c8 = L.circleMarker(
+                [-16.26293804, -42.410249],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.146079904021644, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_28cb3cee5c8b2f3a4778b07927366d08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_872286802e519bb23ba73cb992adeb34 = $(`<div id="html_872286802e519bb23ba73cb992adeb34" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 330.0<br>     <b>Total de acidentes:</b> 79<br>     <b>Mortos:</b> 79.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 49<br>Caminhão: 30     </div>`)[0];
+                popup_28cb3cee5c8b2f3a4778b07927366d08.setContent(html_872286802e519bb23ba73cb992adeb34);
+            
+        
+
+        circle_marker_0c8ed4c7e0acc2e456478036ce5906c8.bindPopup(popup_28cb3cee5c8b2f3a4778b07927366d08)
+        ;
+
+        
+    
+    
+            var circle_marker_fc7fb471b2821410a2d24d0cdec834d3 = L.circleMarker(
+                [-16.26358602, -42.50356998],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.375278407684165, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_8d0961d4faf2ce76b230bb3137ed4cde = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3dd4b5321b1bfc131ff608fbcddfad13 = $(`<div id="html_3dd4b5321b1bfc131ff608fbcddfad13" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 340.0<br>     <b>Total de acidentes:</b> 5<br>     <b>Mortos:</b> 5.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 3<br>Caminhão: 2     </div>`)[0];
+                popup_8d0961d4faf2ce76b230bb3137ed4cde.setContent(html_3dd4b5321b1bfc131ff608fbcddfad13);
+            
+        
+
+        circle_marker_fc7fb471b2821410a2d24d0cdec834d3.bindPopup(popup_8d0961d4faf2ce76b230bb3137ed4cde)
+        ;
+
+        
+    
+    
+            var circle_marker_1bec74804c09c73d95b37e6c76806736 = L.circleMarker(
+                [-16.27293323, -42.53130451],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.133567313170268, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_ad521bc752663dfeefeac2ac4d09e925 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14b12be827eda9e817e0be05a36bf2cb = $(`<div id="html_14b12be827eda9e817e0be05a36bf2cb" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 345.0<br>     <b>Total de acidentes:</b> 20<br>     <b>Mortos:</b> 20.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 20     </div>`)[0];
+                popup_ad521bc752663dfeefeac2ac4d09e925.setContent(html_14b12be827eda9e817e0be05a36bf2cb);
+            
+        
+
+        circle_marker_1bec74804c09c73d95b37e6c76806736.bindPopup(popup_ad521bc752663dfeefeac2ac4d09e925)
+        ;
+
+        
+    
+    
+            var circle_marker_2a4d638f7d4bbfe81fed8a630c1a8c88 = L.circleMarker(
+                [-16.27666, -42.55329],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.238324625039507, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_8905e049056c54cbdfa7e0f3ef791f8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9817e5c23a8c699ee558c731ffc3d46b = $(`<div id="html_9817e5c23a8c699ee558c731ffc3d46b" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 350.0<br>     <b>Total de acidentes:</b> 7<br>     <b>Mortos:</b> 7.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 6<br>Motocicleta: 1     </div>`)[0];
+                popup_8905e049056c54cbdfa7e0f3ef791f8d.setContent(html_9817e5c23a8c699ee558c731ffc3d46b);
+            
+        
+
+        circle_marker_2a4d638f7d4bbfe81fed8a630c1a8c88.bindPopup(popup_8905e049056c54cbdfa7e0f3ef791f8d)
+        ;
+
+        
+    
+    
+            var circle_marker_083fdf63eef22193032ddba1380d58f4 = L.circleMarker(
+                [-16.26522431, -42.57628001],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.140716200112923, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_87ceb0f9570b7aa094f88d0bd63fb0a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab977fcff5e717f87109ae5330fb7a32 = $(`<div id="html_ab977fcff5e717f87109ae5330fb7a32" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 355.0<br>     <b>Total de acidentes:</b> 40<br>     <b>Mortos:</b> 40.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 30<br>Automóvel: 6<br>Caminhão-trator: 4     </div>`)[0];
+                popup_87ceb0f9570b7aa094f88d0bd63fb0a7.setContent(html_ab977fcff5e717f87109ae5330fb7a32);
+            
+        
+
+        circle_marker_083fdf63eef22193032ddba1380d58f4.bindPopup(popup_87ceb0f9570b7aa094f88d0bd63fb0a7)
+        ;
+
+        
+    
+    
+            var circle_marker_30b21e0b90af18c1b4abab8e06dcb79e = L.circleMarker(
+                [-16.28985227, -42.79190313],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.079441541679836, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_1455aa97fb58204626a2b665b946dec0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d09c6350f4d0409857615945b94e512c = $(`<div id="html_d09c6350f4d0409857615945b94e512c" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 380.0<br>     <b>Total de acidentes:</b> 1<br>     <b>Mortos:</b> 1.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 1     </div>`)[0];
+                popup_1455aa97fb58204626a2b665b946dec0.setContent(html_d09c6350f4d0409857615945b94e512c);
+            
+        
+
+        circle_marker_30b21e0b90af18c1b4abab8e06dcb79e.bindPopup(popup_1455aa97fb58204626a2b665b946dec0)
+        ;
+
+        
+    
+    
+            var circle_marker_359f3911c0c588e0cf9865a5ae6de793 = L.circleMarker(
+                [-16.21368559, -42.87757874],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.193685818395112, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_6b05f89c0d3e55ffbaa60a0d0fa4f473 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e0eb974b80fb421e3d3971775d5fb0c = $(`<div id="html_1e0eb974b80fb421e3d3971775d5fb0c" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 395.0<br>     <b>Total de acidentes:</b> 10<br>     <b>Mortos:</b> 10.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 8<br>Caminhonete: 2     </div>`)[0];
+                popup_6b05f89c0d3e55ffbaa60a0d0fa4f473.setContent(html_1e0eb974b80fb421e3d3971775d5fb0c);
+            
+        
+
+        circle_marker_359f3911c0c588e0cf9865a5ae6de793.bindPopup(popup_6b05f89c0d3e55ffbaa60a0d0fa4f473)
+        ;
+
+        
+    
+    
+            var circle_marker_7f94816853e6b396ee4918585c007329 = L.circleMarker(
+                [-16.24158921, -42.92540287],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.987196820661973, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_fec311bbf545044133b883a3cfa36172 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d52fc6b985b9a8f9957eacdc192db074 = $(`<div id="html_d52fc6b985b9a8f9957eacdc192db074" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 400.0<br>     <b>Total de acidentes:</b> 19<br>     <b>Mortos:</b> 19.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 12<br>Motocicleta: 7     </div>`)[0];
+                popup_fec311bbf545044133b883a3cfa36172.setContent(html_d52fc6b985b9a8f9957eacdc192db074);
+            
+        
+
+        circle_marker_7f94816853e6b396ee4918585c007329.bindPopup(popup_fec311bbf545044133b883a3cfa36172)
+        ;
+
+        
+    
+    
+            var circle_marker_9d0d73b14c5b08f525efbe88897780c8 = L.circleMarker(
+                [-16.2964018, -43.04220808],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.273127360074948, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_ba6c710036934532c4adfaf6fa152c7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9b964ac2ace2b20a1a05bb3a5da4c46 = $(`<div id="html_d9b964ac2ace2b20a1a05bb3a5da4c46" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 415.0<br>     <b>Total de acidentes:</b> 21<br>     <b>Mortos:</b> 21.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 17<br>Caminhão-trator: 4     </div>`)[0];
+                popup_ba6c710036934532c4adfaf6fa152c7d.setContent(html_d9b964ac2ace2b20a1a05bb3a5da4c46);
+            
+        
+
+        circle_marker_9d0d73b14c5b08f525efbe88897780c8.bindPopup(popup_ba6c710036934532c4adfaf6fa152c7d)
+        ;
+
+        
+    
+    
+            var circle_marker_117c70f9b6b222cb83582cd2ad289efc = L.circleMarker(
+                [-16.33690716, -43.13798285],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.04639368137266, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_636c479d666e7257b8151be95c034a88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32b1777719cabeff5c42cdfc3dbd62df = $(`<div id="html_32b1777719cabeff5c42cdfc3dbd62df" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 425.0<br>     <b>Total de acidentes:</b> 107<br>     <b>Mortos:</b> 107.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 63<br>Caminhão: 41<br>Automóvel: 3     </div>`)[0];
+                popup_636c479d666e7257b8151be95c034a88.setContent(html_32b1777719cabeff5c42cdfc3dbd62df);
+            
+        
+
+        circle_marker_117c70f9b6b222cb83582cd2ad289efc.bindPopup(popup_636c479d666e7257b8151be95c034a88)
+        ;
+
+        
+    
+    
+            var circle_marker_22e3db9e5a5947e0da00044da38b3cd9 = L.circleMarker(
+                [-16.4185062, -43.26071281],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.375278407684165, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_c276d27528074fb3db9922a1e8bee68e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1c561dc05b7241a8ef686d9d08b598a = $(`<div id="html_f1c561dc05b7241a8ef686d9d08b598a" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 440.0<br>     <b>Total de acidentes:</b> 5<br>     <b>Mortos:</b> 5.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 3<br>Caminhão-trator: 2     </div>`)[0];
+                popup_c276d27528074fb3db9922a1e8bee68e.setContent(html_f1c561dc05b7241a8ef686d9d08b598a);
+            
+        
+
+        circle_marker_22e3db9e5a5947e0da00044da38b3cd9.bindPopup(popup_c276d27528074fb3db9922a1e8bee68e)
+        ;
+
+        
+    
+    
+            var circle_marker_694830cf25a6f1d219375515ff64b071 = L.circleMarker(
+                [-16.420528, -43.28967],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.48952268439944, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_068b8e24145fdcf78b1e71f1fe1f5338 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df48173ab2af33937e00a8498be14116 = $(`<div id="html_df48173ab2af33937e00a8498be14116" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 445.0<br>     <b>Total de acidentes:</b> 32<br>     <b>Mortos:</b> 32.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 14<br>Caminhão: 14<br>Automóvel: 4     </div>`)[0];
+                popup_068b8e24145fdcf78b1e71f1fe1f5338.setContent(html_df48173ab2af33937e00a8498be14116);
+            
+        
+
+        circle_marker_694830cf25a6f1d219375515ff64b071.bindPopup(popup_068b8e24145fdcf78b1e71f1fe1f5338)
+        ;
+
+        
+    
+    
+            var circle_marker_44319f809e56fea729fa64d647626829 = L.circleMarker(
+                [-16.45710399, -43.40386502],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.12415060330663, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_aa0bc67d6a521f89cf81c918b819f187 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b34553f7e90e7fa5b81344426b7260d9 = $(`<div id="html_b34553f7e90e7fa5b81344426b7260d9" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 465.0<br>     <b>Total de acidentes:</b> 14<br>     <b>Mortos:</b> 14.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 7<br>Automóvel: 3<br>Ônibus: 2     </div>`)[0];
+                popup_aa0bc67d6a521f89cf81c918b819f187.setContent(html_b34553f7e90e7fa5b81344426b7260d9);
+            
+        
+
+        circle_marker_44319f809e56fea729fa64d647626829.bindPopup(popup_aa0bc67d6a521f89cf81c918b819f187)
+        ;
+
+        
+    
+    
+            var circle_marker_b162c880816bebd14e207494b3ea2757 = L.circleMarker(
+                [-16.47012768, -43.43947986],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.286521804393267, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_9eea76609fdfd7e26beb0bd154f668f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce297e34d5a7db2bba6775e97aaf37d8 = $(`<div id="html_ce297e34d5a7db2bba6775e97aaf37d8" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 470.0<br>     <b>Total de acidentes:</b> 116<br>     <b>Mortos:</b> 116.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 66<br>Caminhão-trator: 31<br>Automóvel: 8     </div>`)[0];
+                popup_9eea76609fdfd7e26beb0bd154f668f9.setContent(html_ce297e34d5a7db2bba6775e97aaf37d8);
+            
+        
+
+        circle_marker_b162c880816bebd14e207494b3ea2757.bindPopup(popup_9eea76609fdfd7e26beb0bd154f668f9)
+        ;
+
+        
+    
+    
+            var circle_marker_d34a1e6b0d089619c6a43b08e7ccc08a = L.circleMarker(
+                [-16.47033272, -43.48431],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.613603032723674, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_57684d83223651ee661730734a64d4aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_975aa767edf01981a817511749139b59 = $(`<div id="html_975aa767edf01981a817511749139b59" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 475.0<br>     <b>Total de acidentes:</b> 47<br>     <b>Mortos:</b> 47.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 20<br>Caminhão: 8<br>Motocicleta: 7     </div>`)[0];
+                popup_57684d83223651ee661730734a64d4aa.setContent(html_975aa767edf01981a817511749139b59);
+            
+        
+
+        circle_marker_d34a1e6b0d089619c6a43b08e7ccc08a.bindPopup(popup_57684d83223651ee661730734a64d4aa)
+        ;
+
+        
+    
+    
+            var circle_marker_f3786795159ff21a0025c15cdedb7b86 = L.circleMarker(
+                [-16.57595775, -43.62830028],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.837730447165939, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_8a81182f7ebfcef4127bf2054d11b253 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3018834398cbb0a5c6f920b295ec6d6a = $(`<div id="html_3018834398cbb0a5c6f920b295ec6d6a" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 495.0<br>     <b>Total de acidentes:</b> 6<br>     <b>Mortos:</b> 6.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 6     </div>`)[0];
+                popup_8a81182f7ebfcef4127bf2054d11b253.setContent(html_3018834398cbb0a5c6f920b295ec6d6a);
+            
+        
+
+        circle_marker_f3786795159ff21a0025c15cdedb7b86.bindPopup(popup_8a81182f7ebfcef4127bf2054d11b253)
+        ;
+
+        
+    
+    
+            var circle_marker_68cdf4aaf69d2d24c06f069125594629 = L.circleMarker(
+                [-16.597915, -43.644385],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591673732008658, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_5a36d0dd041ed5291e5574d3b5157d42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3b692f32e8b9ad2d79f689fed8a2714 = $(`<div id="html_b3b692f32e8b9ad2d79f689fed8a2714" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 500.0<br>     <b>Total de acidentes:</b> 8<br>     <b>Mortos:</b> 8.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 6<br>Caminhão-trator: 2     </div>`)[0];
+                popup_5a36d0dd041ed5291e5574d3b5157d42.setContent(html_b3b692f32e8b9ad2d79f689fed8a2714);
+            
+        
+
+        circle_marker_68cdf4aaf69d2d24c06f069125594629.bindPopup(popup_5a36d0dd041ed5291e5574d3b5157d42)
+        ;
+
+        
+    
+    
+            var circle_marker_31944faceda10237a705f12da2409d11 = L.circleMarker(
+                [-16.647395, -43.710057],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.203592144986466, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_085b70835234bf945209ce83c4db4394 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b5e0ec049f50345c49e9582204303a4 = $(`<div id="html_1b5e0ec049f50345c49e9582204303a4" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 510.0<br>     <b>Total de acidentes:</b> 29<br>     <b>Mortos:</b> 29.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 22<br>Caminhonete: 3<br>Caminhão: 2     </div>`)[0];
+                popup_085b70835234bf945209ce83c4db4394.setContent(html_1b5e0ec049f50345c49e9582204303a4);
+            
+        
+
+        circle_marker_31944faceda10237a705f12da2409d11.bindPopup(popup_085b70835234bf945209ce83c4db4394)
+        ;
+
+        
+    
+    
+            var circle_marker_a7329f7b2e828c4565f9f8c6a2ceea92 = L.circleMarker(
+                [-16.6601231, -43.7485765],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.40648264778745, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e);
+        
+    
+        var popup_49cf8ade3d29c8366fd06e0801c84824 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_987f17fd4a0d6c035a5aff821886efb1 = $(`<div id="html_987f17fd4a0d6c035a5aff821886efb1" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 515.0<br>     <b>Total de acidentes:</b> 22<br>     <b>Mortos:</b> 22.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 12<br>Motocicleta: 9<br>Automóvel: 1     </div>`)[0];
+                popup_49cf8ade3d29c8366fd06e0801c84824.setContent(html_987f17fd4a0d6c035a5aff821886efb1);
+            
+        
+
+        circle_marker_a7329f7b2e828c4565f9f8c6a2ceea92.bindPopup(popup_49cf8ade3d29c8366fd06e0801c84824)
+        ;
+
+        
+    
+    
+            marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e.addTo(map_40e48591c265d4979c650b6a46dcf57a);
+        
+    
+            var marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_7c00929fc5323d1f499dafdc1af513a0 = L.circleMarker(
+                [-16.04133, -47.540447],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.12415060330663, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_20a602840bae6ef55cdbf1024eed69c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6ce8b72ceccac3ad8fd8561a5be7bc8 = $(`<div id="html_c6ce8b72ceccac3ad8fd8561a5be7bc8" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 0.0<br>     <b>Total de acidentes:</b> 14<br>     <b>Mortos:</b> 14.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 8<br>Caminhonete: 6     </div>`)[0];
+                popup_20a602840bae6ef55cdbf1024eed69c1.setContent(html_c6ce8b72ceccac3ad8fd8561a5be7bc8);
+            
+        
+
+        circle_marker_7c00929fc5323d1f499dafdc1af513a0.bindPopup(popup_20a602840bae6ef55cdbf1024eed69c1)
+        ;
+
+        
+    
+    
+            var circle_marker_4aa4c7d9960accb2e1cf278f38d81aa7 = L.circleMarker(
+                [-15.985051, -47.577747],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.375278407684165, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_a2a874a0afd41288eae7ffea18028007 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bde33c25b40652b0690051aee7bee78 = $(`<div id="html_2bde33c25b40652b0690051aee7bee78" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 5.0<br>     <b>Total de acidentes:</b> 5<br>     <b>Mortos:</b> 5.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 5     </div>`)[0];
+                popup_a2a874a0afd41288eae7ffea18028007.setContent(html_2bde33c25b40652b0690051aee7bee78);
+            
+        
+
+        circle_marker_4aa4c7d9960accb2e1cf278f38d81aa7.bindPopup(popup_a2a874a0afd41288eae7ffea18028007)
+        ;
+
+        
+    
+    
+            var circle_marker_4601125809054a3224064cde7744351a = L.circleMarker(
+                [-16.205414, -47.431618],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.8283137373023, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_728d88fda13a876f6801173e8027ff8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d407f1a011de0999a9b7d906f550e4a5 = $(`<div id="html_d407f1a011de0999a9b7d906f550e4a5" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 10.0<br>     <b>Total de acidentes:</b> 4<br>     <b>Mortos:</b> 4.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 3<br>Caminhonete: 1     </div>`)[0];
+                popup_728d88fda13a876f6801173e8027ff8d.setContent(html_d407f1a011de0999a9b7d906f550e4a5);
+            
+        
+
+        circle_marker_4601125809054a3224064cde7744351a.bindPopup(popup_728d88fda13a876f6801173e8027ff8d)
+        ;
+
+        
+    
+    
+            var circle_marker_44c18a04f538b22d7022bcaae1b95a67 = L.circleMarker(
+                [-16.17513289, -47.47277479],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.238324625039507, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_c2377deea6c1ee79149a9723adac18b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94c8e66a818bbb158f8e72e99e8d5349 = $(`<div id="html_94c8e66a818bbb158f8e72e99e8d5349" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 15.0<br>     <b>Total de acidentes:</b> 7<br>     <b>Mortos:</b> 7.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 3<br>Caminhonete: 2<br>Bicicleta: 2     </div>`)[0];
+                popup_c2377deea6c1ee79149a9723adac18b1.setContent(html_94c8e66a818bbb158f8e72e99e8d5349);
+            
+        
+
+        circle_marker_44c18a04f538b22d7022bcaae1b95a67.bindPopup(popup_c2377deea6c1ee79149a9723adac18b1)
+        ;
+
+        
+    
+    
+            var circle_marker_a0fe2d6687184a4870a09a7c7cffe9fc = L.circleMarker(
+                [-15.961851, -47.663284],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.49964003216865, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_4fbbb3072c08d4a0986d865da8831d94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a646e8a48e001a7fe4f5a9aa8cc17885 = $(`<div id="html_a646e8a48e001a7fe4f5a9aa8cc17885" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 20.0<br>     <b>Total de acidentes:</b> 16<br>     <b>Mortos:</b> 16.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 9<br>Automóvel: 7     </div>`)[0];
+                popup_4fbbb3072c08d4a0986d865da8831d94.setContent(html_a646e8a48e001a7fe4f5a9aa8cc17885);
+            
+        
+
+        circle_marker_a0fe2d6687184a4870a09a7c7cffe9fc.bindPopup(popup_4fbbb3072c08d4a0986d865da8831d94)
+        ;
+
+        
+    
+    
+            var circle_marker_c1572095663038079ad4c61d583fdf48 = L.circleMarker(
+                [-16.102598, -47.498942],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.774289614064447, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_7076e48f7b1fa357622e62815e798a9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa1d7ad8e6c6ed0748ec0226b6720db6 = $(`<div id="html_aa1d7ad8e6c6ed0748ec0226b6720db6" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 25.0<br>     <b>Total de acidentes:</b> 25<br>     <b>Mortos:</b> 25.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 16<br>Bicicleta: 6<br>Automóvel: 3     </div>`)[0];
+                popup_7076e48f7b1fa357622e62815e798a9b.setContent(html_aa1d7ad8e6c6ed0748ec0226b6720db6);
+            
+        
+
+        circle_marker_c1572095663038079ad4c61d583fdf48.bindPopup(popup_7076e48f7b1fa357622e62815e798a9b)
+        ;
+
+        
+    
+    
+            var circle_marker_821905d0ef454bdb7e1b5baab8bc2f15 = L.circleMarker(
+                [-15.942625, -47.731663],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.66604418446824, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_3393ce4d8866f925a0636948221de391 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_258c724f400d73c4e7f30ad154072920 = $(`<div id="html_258c724f400d73c4e7f30ad154072920" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 30.0<br>     <b>Total de acidentes:</b> 34<br>     <b>Mortos:</b> 34.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 17<br>Automóvel: 9<br>Bicicleta: 4     </div>`)[0];
+                popup_3393ce4d8866f925a0636948221de391.setContent(html_258c724f400d73c4e7f30ad154072920);
+            
+        
+
+        circle_marker_821905d0ef454bdb7e1b5baab8bc2f15.bindPopup(popup_3393ce4d8866f925a0636948221de391)
+        ;
+
+        
+    
+    
+            var circle_marker_463d2e123865e7b45527e718c5857ac0 = L.circleMarker(
+                [-15.94073, -47.77002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.375278407684165, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_523da9410391a6694114c76b98b98293 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b8ae9738a61f342fd2721e304054040 = $(`<div id="html_0b8ae9738a61f342fd2721e304054040" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 35.0<br>     <b>Total de acidentes:</b> 5<br>     <b>Mortos:</b> 5.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 3<br>Automóvel: 2     </div>`)[0];
+                popup_523da9410391a6694114c76b98b98293.setContent(html_0b8ae9738a61f342fd2721e304054040);
+            
+        
+
+        circle_marker_463d2e123865e7b45527e718c5857ac0.bindPopup(popup_523da9410391a6694114c76b98b98293)
+        ;
+
+        
+    
+    
+            var circle_marker_332ef1542668131268769986d22e8114 = L.circleMarker(
+                [-15.933754, -47.817089],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.837730447165939, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_62c4beb9315cd43e8cdcd4751f227564 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42cbd1590d82d1cd7a5599c614d836bf = $(`<div id="html_42cbd1590d82d1cd7a5599c614d836bf" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 40.0<br>     <b>Total de acidentes:</b> 6<br>     <b>Mortos:</b> 6.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 6     </div>`)[0];
+                popup_62c4beb9315cd43e8cdcd4751f227564.setContent(html_42cbd1590d82d1cd7a5599c614d836bf);
+            
+        
+
+        circle_marker_332ef1542668131268769986d22e8114.bindPopup(popup_62c4beb9315cd43e8cdcd4751f227564)
+        ;
+
+        
+    
+    
+            var circle_marker_80ad101d5d1919f1748d7df3b79f6eb8 = L.circleMarker(
+                [-15.956645, -47.867757],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.774289614064447, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_d28afe9f423c4322113437348788d5b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4c9aaf407f8e330dd4611008dc5ab69 = $(`<div id="html_c4c9aaf407f8e330dd4611008dc5ab69" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 45.0<br>     <b>Total de acidentes:</b> 25<br>     <b>Mortos:</b> 25.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 25     </div>`)[0];
+                popup_d28afe9f423c4322113437348788d5b6.setContent(html_c4c9aaf407f8e330dd4611008dc5ab69);
+            
+        
+
+        circle_marker_80ad101d5d1919f1748d7df3b79f6eb8.bindPopup(popup_d28afe9f423c4322113437348788d5b6)
+        ;
+
+        
+    
+    
+            var circle_marker_c0381e8d71fe157d6d6f97aed774c22e = L.circleMarker(
+                [-15.97634747, -47.91034698],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.53416149104384, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_2b72939311a16955168fa06fd568d627 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5100c7344a5806a3a76666d8d55b3c7 = $(`<div id="html_f5100c7344a5806a3a76666d8d55b3c7" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 50.0<br>     <b>Total de acidentes:</b> 23<br>     <b>Mortos:</b> 23.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 15<br>Caminhonete: 8     </div>`)[0];
+                popup_2b72939311a16955168fa06fd568d627.setContent(html_f5100c7344a5806a3a76666d8d55b3c7);
+            
+        
+
+        circle_marker_c0381e8d71fe157d6d6f97aed774c22e.bindPopup(popup_2b72939311a16955168fa06fd568d627)
+        ;
+
+        
+    
+    
+            var circle_marker_e655c92603794ff882f93311ac877f02 = L.circleMarker(
+                [-15.94811, -47.84524],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.375278407684165, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_89c47c5b24131a9e88698299458dbef7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fff2b3dc6a66a9204cbb80d5f1230a47 = $(`<div id="html_fff2b3dc6a66a9204cbb80d5f1230a47" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 55.0<br>     <b>Total de acidentes:</b> 5<br>     <b>Mortos:</b> 5.0<br>     <hr><b>Top Veículos:</b><br>Caminhonete: 3<br>Motocicleta: 2     </div>`)[0];
+                popup_89c47c5b24131a9e88698299458dbef7.setContent(html_fff2b3dc6a66a9204cbb80d5f1230a47);
+            
+        
+
+        circle_marker_e655c92603794ff882f93311ac877f02.bindPopup(popup_89c47c5b24131a9e88698299458dbef7)
+        ;
+
+        
+    
+    
+            var circle_marker_3c0b51123f5bac7f678fbe26ed655ed0 = L.circleMarker(
+                [-15.9019, -41.5369],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.837730447165939, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_1e1e4f967fe89508961521f70756bad0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73a603a13530f7dc526fc472636d4810 = $(`<div id="html_73a603a13530f7dc526fc472636d4810" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 210.0<br>     <b>Total de acidentes:</b> 6<br>     <b>Mortos:</b> 6.0<br>     <hr><b>Top Veículos:</b><br>Caminhonete: 6     </div>`)[0];
+                popup_1e1e4f967fe89508961521f70756bad0.setContent(html_73a603a13530f7dc526fc472636d4810);
+            
+        
+
+        circle_marker_3c0b51123f5bac7f678fbe26ed655ed0.bindPopup(popup_1e1e4f967fe89508961521f70756bad0)
+        ;
+
+        
+    
+    
+            var circle_marker_92199df88a9b1152aca1785f419b0d81 = L.circleMarker(
+                [-15.95896, -41.63528],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591673732008658, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_c80280142f049def980f7747d2419dc7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58e61c1ebe05142c4ff52fd31ee8bbd7 = $(`<div id="html_58e61c1ebe05142c4ff52fd31ee8bbd7" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 220.0<br>     <b>Total de acidentes:</b> 8<br>     <b>Mortos:</b> 8.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 8     </div>`)[0];
+                popup_c80280142f049def980f7747d2419dc7.setContent(html_58e61c1ebe05142c4ff52fd31ee8bbd7);
+            
+        
+
+        circle_marker_92199df88a9b1152aca1785f419b0d81.bindPopup(popup_c80280142f049def980f7747d2419dc7)
+        ;
+
+        
+    
+    
+            var circle_marker_fa8ad910412530a5b310a1a7093961d9 = L.circleMarker(
+                [-15.958212, -41.65235],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.69484807238461, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_eed0f1e6278b2cb4efffba017df0af52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2faa0b1b4c30edaa534203129d68c3e2 = $(`<div id="html_2faa0b1b4c30edaa534203129d68c3e2" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 225.0<br>     <b>Total de acidentes:</b> 12<br>     <b>Mortos:</b> 12.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 12     </div>`)[0];
+                popup_eed0f1e6278b2cb4efffba017df0af52.setContent(html_2faa0b1b4c30edaa534203129d68c3e2);
+            
+        
+
+        circle_marker_fa8ad910412530a5b310a1a7093961d9.bindPopup(popup_eed0f1e6278b2cb4efffba017df0af52)
+        ;
+
+        
+    
+    
+            var circle_marker_b84c6b1300702be1c3f272f63e053196 = L.circleMarker(
+                [-15.96744613, -41.70259484],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.079441541679836, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_7e172188e008247b9bf610b82eee426f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62b0423c4621bce71430d2cc912b04e0 = $(`<div id="html_62b0423c4621bce71430d2cc912b04e0" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 230.0<br>     <b>Total de acidentes:</b> 1<br>     <b>Mortos:</b> 1.0<br>     <hr><b>Top Veículos:</b><br>Caminhonete: 1     </div>`)[0];
+                popup_7e172188e008247b9bf610b82eee426f.setContent(html_62b0423c4621bce71430d2cc912b04e0);
+            
+        
+
+        circle_marker_b84c6b1300702be1c3f272f63e053196.bindPopup(popup_7e172188e008247b9bf610b82eee426f)
+        ;
+
+        
+    
+    
+            var circle_marker_bfbef86b5a1d00a93a859ea6d4224438 = L.circleMarker(
+                [-15.986187185, -41.859197615],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.30196161345544, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_a82cb593342eb55bf0ff3804c85eb97a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8673bfcec68a18c569b42e3d7706eece = $(`<div id="html_8673bfcec68a18c569b42e3d7706eece" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 250.0<br>     <b>Total de acidentes:</b> 30<br>     <b>Mortos:</b> 30.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 15<br>Motocicleta: 15     </div>`)[0];
+                popup_a82cb593342eb55bf0ff3804c85eb97a.setContent(html_8673bfcec68a18c569b42e3d7706eece);
+            
+        
+
+        circle_marker_bfbef86b5a1d00a93a859ea6d4224438.bindPopup(popup_a82cb593342eb55bf0ff3804c85eb97a)
+        ;
+
+        
+    
+    
+            var circle_marker_c0ca76b383a0194a25bbf24eaa2c13d3 = L.circleMarker(
+                [-16.00758212, -41.924691],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.40648264778745, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_5b786bbe1c4dd10c49453d6dbd353ee3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55f3b46998d2dd45e45754fe99f6cb73 = $(`<div id="html_55f3b46998d2dd45e45754fe99f6cb73" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 255.0<br>     <b>Total de acidentes:</b> 22<br>     <b>Mortos:</b> 22.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 16<br>Caminhonete: 6     </div>`)[0];
+                popup_5b786bbe1c4dd10c49453d6dbd353ee3.setContent(html_55f3b46998d2dd45e45754fe99f6cb73);
+            
+        
+
+        circle_marker_c0ca76b383a0194a25bbf24eaa2c13d3.bindPopup(popup_5b786bbe1c4dd10c49453d6dbd353ee3)
+        ;
+
+        
+    
+    
+            var circle_marker_e506e5aa7ba4ee2a756c948300e88e8a = L.circleMarker(
+                [-15.99368303, -42.01807201],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.774289614064447, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_563e656f949beccc29300fcc1338b1f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27e9b4e4acb594ab79a532ea78c43444 = $(`<div id="html_27e9b4e4acb594ab79a532ea78c43444" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 265.0<br>     <b>Total de acidentes:</b> 25<br>     <b>Mortos:</b> 25.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 16<br>Caminhão: 9     </div>`)[0];
+                popup_563e656f949beccc29300fcc1338b1f9.setContent(html_27e9b4e4acb594ab79a532ea78c43444);
+            
+        
+
+        circle_marker_e506e5aa7ba4ee2a756c948300e88e8a.bindPopup(popup_563e656f949beccc29300fcc1338b1f9)
+        ;
+
+        
+    
+    
+            var circle_marker_e2524bdff7d317d70c3cb8e7e588c92e = L.circleMarker(
+                [-15.995717, -42.008101],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.133567313170268, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_0bb4ade6271450ca99d191dcbfd0334f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e45cf737aa0f5ebdeb1785739db2b7a8 = $(`<div id="html_e45cf737aa0f5ebdeb1785739db2b7a8" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 270.0<br>     <b>Total de acidentes:</b> 20<br>     <b>Mortos:</b> 20.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 20     </div>`)[0];
+                popup_0bb4ade6271450ca99d191dcbfd0334f.setContent(html_e45cf737aa0f5ebdeb1785739db2b7a8);
+            
+        
+
+        circle_marker_e2524bdff7d317d70c3cb8e7e588c92e.bindPopup(popup_0bb4ade6271450ca99d191dcbfd0334f)
+        ;
+
+        
+    
+    
+            var circle_marker_f93512df13199cb76d48c8580d439b5a = L.circleMarker(
+                [-16.02764697, -42.08916901],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.158883083359672, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_c1f4721bb11db1f9be36fb0be88083d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb62a3261b36f7f9d3bad58ca1a881c1 = $(`<div id="html_cb62a3261b36f7f9d3bad58ca1a881c1" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 275.0<br>     <b>Total de acidentes:</b> 3<br>     <b>Mortos:</b> 3.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 3     </div>`)[0];
+                popup_c1f4721bb11db1f9be36fb0be88083d0.setContent(html_cb62a3261b36f7f9d3bad58ca1a881c1);
+            
+        
+
+        circle_marker_f93512df13199cb76d48c8580d439b5a.bindPopup(popup_c1f4721bb11db1f9be36fb0be88083d0)
+        ;
+
+        
+    
+    
+            var circle_marker_0ef5d4ca80dbd6ffcf6add882b446460 = L.circleMarker(
+                [-16.12787378, -42.22597419],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.49964003216865, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_5227b321445e6dd02df3315eece2b322 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36dfd0ecaa2db0acae5ce53bdfc96cd1 = $(`<div id="html_36dfd0ecaa2db0acae5ce53bdfc96cd1" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 295.0<br>     <b>Total de acidentes:</b> 16<br>     <b>Mortos:</b> 16.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 10<br>Bicicleta: 6     </div>`)[0];
+                popup_5227b321445e6dd02df3315eece2b322.setContent(html_36dfd0ecaa2db0acae5ce53bdfc96cd1);
+            
+        
+
+        circle_marker_0ef5d4ca80dbd6ffcf6add882b446460.bindPopup(popup_5227b321445e6dd02df3315eece2b322)
+        ;
+
+        
+    
+    
+            var circle_marker_ae136a9482d555383e0d1171edc949e3 = L.circleMarker(
+                [-16.1354, -42.27795],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.8283137373023, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_7b06b8b6dbcf8e505eac6796c83986ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_807c01a37069b0e05987938567991ffc = $(`<div id="html_807c01a37069b0e05987938567991ffc" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 305.0<br>     <b>Total de acidentes:</b> 4<br>     <b>Mortos:</b> 4.0<br>     <hr><b>Top Veículos:</b><br>Camioneta: 4     </div>`)[0];
+                popup_7b06b8b6dbcf8e505eac6796c83986ce.setContent(html_807c01a37069b0e05987938567991ffc);
+            
+        
+
+        circle_marker_ae136a9482d555383e0d1171edc949e3.bindPopup(popup_7b06b8b6dbcf8e505eac6796c83986ce)
+        ;
+
+        
+    
+    
+            var circle_marker_a2ca1ce464420be91c103622b83b09b6 = L.circleMarker(
+                [-16.16620056, -42.31993003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.69484807238461, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_b5a75375af44d3d6eb2d9fb9ddede6ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91a6a73e478401651d03ec562e37a488 = $(`<div id="html_91a6a73e478401651d03ec562e37a488" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 310.0<br>     <b>Total de acidentes:</b> 12<br>     <b>Mortos:</b> 12.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 12     </div>`)[0];
+                popup_b5a75375af44d3d6eb2d9fb9ddede6ff.setContent(html_91a6a73e478401651d03ec562e37a488);
+            
+        
+
+        circle_marker_a2ca1ce464420be91c103622b83b09b6.bindPopup(popup_b5a75375af44d3d6eb2d9fb9ddede6ff)
+        ;
+
+        
+    
+    
+            var circle_marker_eac51bd18335d3b62231d1de25b71cdb = L.circleMarker(
+                [-16.17279, -42.33262],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.69484807238461, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_85111aca866d85fa54789791ba586939 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5c3f8eebdea04ead8d31245eeb6771a = $(`<div id="html_c5c3f8eebdea04ead8d31245eeb6771a" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 315.0<br>     <b>Total de acidentes:</b> 12<br>     <b>Mortos:</b> 12.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 12     </div>`)[0];
+                popup_85111aca866d85fa54789791ba586939.setContent(html_c5c3f8eebdea04ead8d31245eeb6771a);
+            
+        
+
+        circle_marker_eac51bd18335d3b62231d1de25b71cdb.bindPopup(popup_85111aca866d85fa54789791ba586939)
+        ;
+
+        
+    
+    
+            var circle_marker_aef4bf4f04b875959634dc4e1d30e2e6 = L.circleMarker(
+                [-16.25361768, -42.40072003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.837730447165939, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_d627665b3057d1aa755d594864f5f743 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31e1064802fac69543243638a3d824ab = $(`<div id="html_31e1064802fac69543243638a3d824ab" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 325.0<br>     <b>Total de acidentes:</b> 6<br>     <b>Mortos:</b> 6.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 6     </div>`)[0];
+                popup_d627665b3057d1aa755d594864f5f743.setContent(html_31e1064802fac69543243638a3d824ab);
+            
+        
+
+        circle_marker_aef4bf4f04b875959634dc4e1d30e2e6.bindPopup(popup_d627665b3057d1aa755d594864f5f743)
+        ;
+
+        
+    
+    
+            var circle_marker_71bea1f7cf8606cf35579b188e93c034 = L.circleMarker(
+                [-16.25629, -42.45367],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.158883083359672, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_282f2162f27367d4ab7b6e009cd048ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78b278c9574bcb5e85681666d8b7f85b = $(`<div id="html_78b278c9574bcb5e85681666d8b7f85b" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 335.0<br>     <b>Total de acidentes:</b> 3<br>     <b>Mortos:</b> 3.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 3     </div>`)[0];
+                popup_282f2162f27367d4ab7b6e009cd048ae.setContent(html_78b278c9574bcb5e85681666d8b7f85b);
+            
+        
+
+        circle_marker_71bea1f7cf8606cf35579b188e93c034.bindPopup(popup_282f2162f27367d4ab7b6e009cd048ae)
+        ;
+
+        
+    
+    
+            var circle_marker_1207794be2a5ac357430f951ffd1523f = L.circleMarker(
+                [-16.26358602, -42.50356998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.375278407684165, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_e9baa735a9bf0a67840840591fc96cf4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a4aa46c8d94dbe86f75d00df5016266 = $(`<div id="html_4a4aa46c8d94dbe86f75d00df5016266" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 340.0<br>     <b>Total de acidentes:</b> 5<br>     <b>Mortos:</b> 5.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 3<br>Caminhão: 2     </div>`)[0];
+                popup_e9baa735a9bf0a67840840591fc96cf4.setContent(html_4a4aa46c8d94dbe86f75d00df5016266);
+            
+        
+
+        circle_marker_1207794be2a5ac357430f951ffd1523f.bindPopup(popup_e9baa735a9bf0a67840840591fc96cf4)
+        ;
+
+        
+    
+    
+            var circle_marker_ec83df0af04ff729df750ceb8a57bb4c = L.circleMarker(
+                [-16.27666, -42.55329],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.238324625039507, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_44a467b82a1283d44edddb7335a926c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1cb92ccfa393b22309554348c18af3c0 = $(`<div id="html_1cb92ccfa393b22309554348c18af3c0" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 350.0<br>     <b>Total de acidentes:</b> 7<br>     <b>Mortos:</b> 7.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 6<br>Motocicleta: 1     </div>`)[0];
+                popup_44a467b82a1283d44edddb7335a926c7.setContent(html_1cb92ccfa393b22309554348c18af3c0);
+            
+        
+
+        circle_marker_ec83df0af04ff729df750ceb8a57bb4c.bindPopup(popup_44a467b82a1283d44edddb7335a926c7)
+        ;
+
+        
+    
+    
+            var circle_marker_ce620e362a5b338168e8768c7fb57dfd = L.circleMarker(
+                [-16.26522431, -42.57628001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.140716200112923, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_619664cf2e22a641913c89b6925a9d5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f18138ab99a9e865d7f9664a10a90edb = $(`<div id="html_f18138ab99a9e865d7f9664a10a90edb" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 355.0<br>     <b>Total de acidentes:</b> 40<br>     <b>Mortos:</b> 40.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 30<br>Automóvel: 6<br>Caminhão-trator: 4     </div>`)[0];
+                popup_619664cf2e22a641913c89b6925a9d5e.setContent(html_f18138ab99a9e865d7f9664a10a90edb);
+            
+        
+
+        circle_marker_ce620e362a5b338168e8768c7fb57dfd.bindPopup(popup_619664cf2e22a641913c89b6925a9d5e)
+        ;
+
+        
+    
+    
+            var circle_marker_0ac33283a51142a4a38d9f20c3563375 = L.circleMarker(
+                [-16.25457906, -42.63200692],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.454719949364002, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_668b1170cb4ad20252bf271d108b234e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94181f1c590f93fc95b66d02067ed624 = $(`<div id="html_94181f1c590f93fc95b66d02067ed624" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 360.0<br>     <b>Total de acidentes:</b> 11<br>     <b>Mortos:</b> 11.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 9<br>Automóvel: 2     </div>`)[0];
+                popup_668b1170cb4ad20252bf271d108b234e.setContent(html_94181f1c590f93fc95b66d02067ed624);
+            
+        
+
+        circle_marker_0ac33283a51142a4a38d9f20c3563375.bindPopup(popup_668b1170cb4ad20252bf271d108b234e)
+        ;
+
+        
+    
+    
+            var circle_marker_2392a93359d4971c2cf857fea0de7453 = L.circleMarker(
+                [-16.272048, -42.658164],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.454719949364002, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_3fa182eaf1f75157e7a07bb3a818ac4f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f960ab1c142efb398ba99fbf87a3adc0 = $(`<div id="html_f960ab1c142efb398ba99fbf87a3adc0" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 365.0<br>     <b>Total de acidentes:</b> 11<br>     <b>Mortos:</b> 11.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 6<br>Automóvel: 5     </div>`)[0];
+                popup_3fa182eaf1f75157e7a07bb3a818ac4f.setContent(html_f960ab1c142efb398ba99fbf87a3adc0);
+            
+        
+
+        circle_marker_2392a93359d4971c2cf857fea0de7453.bindPopup(popup_3fa182eaf1f75157e7a07bb3a818ac4f)
+        ;
+
+        
+    
+    
+            var circle_marker_faea1fd514cc93a875fb13ce62a25ee1 = L.circleMarker(
+                [-16.29735398, -42.765631],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.987196820661973, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_c366e0d0e29e681c5362e0a1287a96d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c98836def0d8d947a0d31221d6b1a5e = $(`<div id="html_1c98836def0d8d947a0d31221d6b1a5e" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 370.0<br>     <b>Total de acidentes:</b> 19<br>     <b>Mortos:</b> 19.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 19     </div>`)[0];
+                popup_c366e0d0e29e681c5362e0a1287a96d4.setContent(html_1c98836def0d8d947a0d31221d6b1a5e);
+            
+        
+
+        circle_marker_faea1fd514cc93a875fb13ce62a25ee1.bindPopup(popup_c366e0d0e29e681c5362e0a1287a96d4)
+        ;
+
+        
+    
+    
+            var circle_marker_ac3d6f6c62ec6754798607766531eeaa = L.circleMarker(
+                [-16.298547, -42.74137],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.69484807238461, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_f31e8d31a9128c69e1ab6238fb31b80f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b01994af2270322124dbd037c91d7769 = $(`<div id="html_b01994af2270322124dbd037c91d7769" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 375.0<br>     <b>Total de acidentes:</b> 12<br>     <b>Mortos:</b> 12.0<br>     <hr><b>Top Veículos:</b><br>Caminhonete: 12     </div>`)[0];
+                popup_f31e8d31a9128c69e1ab6238fb31b80f.setContent(html_b01994af2270322124dbd037c91d7769);
+            
+        
+
+        circle_marker_ac3d6f6c62ec6754798607766531eeaa.bindPopup(popup_f31e8d31a9128c69e1ab6238fb31b80f)
+        ;
+
+        
+    
+    
+            var circle_marker_b60453a0e7e81e6e390bc5d8a55d8ca7 = L.circleMarker(
+                [-16.21368559, -42.87757874],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.193685818395112, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_c6fd4e3c69f024b565ee022d33680fbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e495261b220d9373c5de7ad798250957 = $(`<div id="html_e495261b220d9373c5de7ad798250957" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 395.0<br>     <b>Total de acidentes:</b> 10<br>     <b>Mortos:</b> 10.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 8<br>Caminhonete: 2     </div>`)[0];
+                popup_c6fd4e3c69f024b565ee022d33680fbf.setContent(html_e495261b220d9373c5de7ad798250957);
+            
+        
+
+        circle_marker_b60453a0e7e81e6e390bc5d8a55d8ca7.bindPopup(popup_c6fd4e3c69f024b565ee022d33680fbf)
+        ;
+
+        
+    
+    
+            var circle_marker_57eb9344a3b10ea75c2ba6526cce6376 = L.circleMarker(
+                [-16.24158921, -42.92540287],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.987196820661973, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_c0091e0a835f50897ad793c6cacf394c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75170cedaa45564cc188722873a16289 = $(`<div id="html_75170cedaa45564cc188722873a16289" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 400.0<br>     <b>Total de acidentes:</b> 19<br>     <b>Mortos:</b> 19.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 12<br>Motocicleta: 7     </div>`)[0];
+                popup_c0091e0a835f50897ad793c6cacf394c.setContent(html_75170cedaa45564cc188722873a16289);
+            
+        
+
+        circle_marker_57eb9344a3b10ea75c2ba6526cce6376.bindPopup(popup_c0091e0a835f50897ad793c6cacf394c)
+        ;
+
+        
+    
+    
+            var circle_marker_0eeb26f1816b5dc0727e510ee2f59b82 = L.circleMarker(
+                [-16.26885467, -42.97339413],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.29583686600433, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_0859908017319cd789ad6f6952904bcf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40984cfa4d8959bc8e6d1eb0484a9203 = $(`<div id="html_40984cfa4d8959bc8e6d1eb0484a9203" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 405.0<br>     <b>Total de acidentes:</b> 2<br>     <b>Mortos:</b> 2.0<br>     <hr><b>Top Veículos:</b><br>Caminhonete: 2     </div>`)[0];
+                popup_0859908017319cd789ad6f6952904bcf.setContent(html_40984cfa4d8959bc8e6d1eb0484a9203);
+            
+        
+
+        circle_marker_0eeb26f1816b5dc0727e510ee2f59b82.bindPopup(popup_0859908017319cd789ad6f6952904bcf)
+        ;
+
+        
+    
+    
+            var circle_marker_efcaac33d09ad086c5376a2b92ff19cf = L.circleMarker(
+                [-16.33690716, -43.13798285],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.04639368137266, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_57ec44a3ba25343fd4b090dd625512db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1613b0da2c958523a03a94a8fc031368 = $(`<div id="html_1613b0da2c958523a03a94a8fc031368" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 425.0<br>     <b>Total de acidentes:</b> 107<br>     <b>Mortos:</b> 107.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 63<br>Caminhão: 41<br>Automóvel: 3     </div>`)[0];
+                popup_57ec44a3ba25343fd4b090dd625512db.setContent(html_1613b0da2c958523a03a94a8fc031368);
+            
+        
+
+        circle_marker_efcaac33d09ad086c5376a2b92ff19cf.bindPopup(popup_57ec44a3ba25343fd4b090dd625512db)
+        ;
+
+        
+    
+    
+            var circle_marker_6593d4b2fdb5c752e52b956cae947789 = L.circleMarker(
+                [-16.4185062, -43.26071281],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.375278407684165, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_79c5d07478e43beea446b4a77c8e3fcf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25047ec89e4e966ee419eefb0649d2e5 = $(`<div id="html_25047ec89e4e966ee419eefb0649d2e5" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 440.0<br>     <b>Total de acidentes:</b> 5<br>     <b>Mortos:</b> 5.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 3<br>Caminhão-trator: 2     </div>`)[0];
+                popup_79c5d07478e43beea446b4a77c8e3fcf.setContent(html_25047ec89e4e966ee419eefb0649d2e5);
+            
+        
+
+        circle_marker_6593d4b2fdb5c752e52b956cae947789.bindPopup(popup_79c5d07478e43beea446b4a77c8e3fcf)
+        ;
+
+        
+    
+    
+            var circle_marker_308e15fc14aebf4b41e6ee6946788313 = L.circleMarker(
+                [-16.420528, -43.28967],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.48952268439944, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_4296e42542cdedb27bf610b730d15db8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_108787dab24d35b250cf387b887e141c = $(`<div id="html_108787dab24d35b250cf387b887e141c" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 445.0<br>     <b>Total de acidentes:</b> 32<br>     <b>Mortos:</b> 32.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 14<br>Caminhão: 14<br>Automóvel: 4     </div>`)[0];
+                popup_4296e42542cdedb27bf610b730d15db8.setContent(html_108787dab24d35b250cf387b887e141c);
+            
+        
+
+        circle_marker_308e15fc14aebf4b41e6ee6946788313.bindPopup(popup_4296e42542cdedb27bf610b730d15db8)
+        ;
+
+        
+    
+    
+            var circle_marker_56b7df92a8d9f2fcb96eea86dc473fb7 = L.circleMarker(
+                [-16.45710399, -43.40386502],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.12415060330663, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_f7fc77f3b4f826bb5d89f7b008cb8996 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e140eb5dc1393650ba452c929afe3042 = $(`<div id="html_e140eb5dc1393650ba452c929afe3042" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 465.0<br>     <b>Total de acidentes:</b> 14<br>     <b>Mortos:</b> 14.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 7<br>Automóvel: 3<br>Ônibus: 2     </div>`)[0];
+                popup_f7fc77f3b4f826bb5d89f7b008cb8996.setContent(html_e140eb5dc1393650ba452c929afe3042);
+            
+        
+
+        circle_marker_56b7df92a8d9f2fcb96eea86dc473fb7.bindPopup(popup_f7fc77f3b4f826bb5d89f7b008cb8996)
+        ;
+
+        
+    
+    
+            var circle_marker_543cc8faf5d26ffe1ea3632df8c2b345 = L.circleMarker(
+                [-16.47012768, -43.43947986],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.286521804393267, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_2931cdb0cb81cf3b7dbc5ef9dcba4c68 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59608f27fa9170ba88dbda74843c3261 = $(`<div id="html_59608f27fa9170ba88dbda74843c3261" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 470.0<br>     <b>Total de acidentes:</b> 116<br>     <b>Mortos:</b> 116.0<br>     <hr><b>Top Veículos:</b><br>Caminhão: 66<br>Caminhão-trator: 31<br>Automóvel: 8     </div>`)[0];
+                popup_2931cdb0cb81cf3b7dbc5ef9dcba4c68.setContent(html_59608f27fa9170ba88dbda74843c3261);
+            
+        
+
+        circle_marker_543cc8faf5d26ffe1ea3632df8c2b345.bindPopup(popup_2931cdb0cb81cf3b7dbc5ef9dcba4c68)
+        ;
+
+        
+    
+    
+            var circle_marker_a42e34def22cd1c68ffd1a9fa0ffbeaa = L.circleMarker(
+                [-16.47033272, -43.48431],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.613603032723674, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_5544e63282a1818febb44bb7f3fc08f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_543a1e7abc2b91b4fa8bd1c1d511da22 = $(`<div id="html_543a1e7abc2b91b4fa8bd1c1d511da22" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 475.0<br>     <b>Total de acidentes:</b> 47<br>     <b>Mortos:</b> 47.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 20<br>Caminhão: 8<br>Motocicleta: 7     </div>`)[0];
+                popup_5544e63282a1818febb44bb7f3fc08f1.setContent(html_543a1e7abc2b91b4fa8bd1c1d511da22);
+            
+        
+
+        circle_marker_a42e34def22cd1c68ffd1a9fa0ffbeaa.bindPopup(popup_5544e63282a1818febb44bb7f3fc08f1)
+        ;
+
+        
+    
+    
+            var circle_marker_67ba68a087c1e4b48af2bd5c243d2338 = L.circleMarker(
+                [-16.51784211, -43.55947992],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591673732008658, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_187bd54f4b857c731f46c79fe2f47d89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee30d6f0496661dd40321188832187e0 = $(`<div id="html_ee30d6f0496661dd40321188832187e0" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 485.0<br>     <b>Total de acidentes:</b> 8<br>     <b>Mortos:</b> 8.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 6<br>Bicicleta: 2     </div>`)[0];
+                popup_187bd54f4b857c731f46c79fe2f47d89.setContent(html_ee30d6f0496661dd40321188832187e0);
+            
+        
+
+        circle_marker_67ba68a087c1e4b48af2bd5c243d2338.bindPopup(popup_187bd54f4b857c731f46c79fe2f47d89)
+        ;
+
+        
+    
+    
+            var circle_marker_81b29c25c6ae2864dd91f33e051dafd7 = L.circleMarker(
+                [-16.61894941, -43.6887828],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.917171988845775, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_1273346dbde0972dea3e91f1398407ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8b3bbbd1e8fed29d700534fcd07cc96 = $(`<div id="html_e8b3bbbd1e8fed29d700534fcd07cc96" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 505.0<br>     <b>Total de acidentes:</b> 13<br>     <b>Mortos:</b> 13.0<br>     <hr><b>Top Veículos:</b><br>Automóvel: 8<br>Caminhonete: 5     </div>`)[0];
+                popup_1273346dbde0972dea3e91f1398407ef.setContent(html_e8b3bbbd1e8fed29d700534fcd07cc96);
+            
+        
+
+        circle_marker_81b29c25c6ae2864dd91f33e051dafd7.bindPopup(popup_1273346dbde0972dea3e91f1398407ef)
+        ;
+
+        
+    
+    
+            var circle_marker_0e93a335d4f80fbaa7ddc5db412f1fa9 = L.circleMarker(
+                [-16.647395, -43.710057],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.203592144986466, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_3253e32baef824fd0d92ea8bd70f45a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d25c6a61cb6b911ca31f0863cbd280dc = $(`<div id="html_d25c6a61cb6b911ca31f0863cbd280dc" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 510.0<br>     <b>Total de acidentes:</b> 29<br>     <b>Mortos:</b> 29.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 22<br>Caminhonete: 3<br>Caminhão: 2     </div>`)[0];
+                popup_3253e32baef824fd0d92ea8bd70f45a4.setContent(html_d25c6a61cb6b911ca31f0863cbd280dc);
+            
+        
+
+        circle_marker_0e93a335d4f80fbaa7ddc5db412f1fa9.bindPopup(popup_3253e32baef824fd0d92ea8bd70f45a4)
+        ;
+
+        
+    
+    
+            var circle_marker_64cf29359b6c18619c580e153fd0031d = L.circleMarker(
+                [-16.6601231, -43.7485765],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.40648264778745, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_cfbf7fca3bbb43214d4bf733c978960c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b15ab71bc40c2d0029d6cb64d471ac4d = $(`<div id="html_b15ab71bc40c2d0029d6cb64d471ac4d" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 515.0<br>     <b>Total de acidentes:</b> 22<br>     <b>Mortos:</b> 22.0<br>     <hr><b>Top Veículos:</b><br>Caminhão-trator: 12<br>Motocicleta: 9<br>Automóvel: 1     </div>`)[0];
+                popup_cfbf7fca3bbb43214d4bf733c978960c.setContent(html_b15ab71bc40c2d0029d6cb64d471ac4d);
+            
+        
+
+        circle_marker_64cf29359b6c18619c580e153fd0031d.bindPopup(popup_cfbf7fca3bbb43214d4bf733c978960c)
+        ;
+
+        
+    
+    
+            var circle_marker_a6bd6c76939437e5e76557259543dd02 = L.circleMarker(
+                [-16.66570005, -43.78533097],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.140716200112923, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385);
+        
+    
+        var popup_7d34e1af288635144ed717898afa85c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df46525e894dd7fb43ebcdaa0a3a1a9c = $(`<div id="html_df46525e894dd7fb43ebcdaa0a3a1a9c" style="width: 100.0%; height: 100.0%;">     <b>BR:</b> 251 | <b>KM:</b> 520.0<br>     <b>Total de acidentes:</b> 40<br>     <b>Mortos:</b> 40.0<br>     <hr><b>Top Veículos:</b><br>Motocicleta: 21<br>Micro-ônibus: 10<br>Bicicleta: 8     </div>`)[0];
+                popup_7d34e1af288635144ed717898afa85c3.setContent(html_df46525e894dd7fb43ebcdaa0a3a1a9c);
+            
+        
+
+        circle_marker_a6bd6c76939437e5e76557259543dd02.bindPopup(popup_7d34e1af288635144ed717898afa85c3)
+        ;
+
+        
+    
+    
+            marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385.addTo(map_40e48591c265d4979c650b6a46dcf57a);
+        
+    
+            var layer_control_00c5fb64f1de1b698cb04497eb4b073c_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_de46f5a7ba19cb0380a91f3d8ef1ab58,
+                },
+                overlays :  {
+                    "\ud83d\udd34 Todos acidentes com mortos" : marker_cluster_1c54d59f565fd41597e322b6b4059e67,
+                    "\ud83d\ude9b Acidentes com caminh\u00e3o" : marker_cluster_43212c6cbbb8e1d8fd26f35b0a3e128e,
+                    "\ud83d\ude97 Acidentes com ve\u00edculos leves" : marker_cluster_1a8ff4aad92966f9a4bf626ee3ecc385,
+                },
+            };
+            let layer_control_00c5fb64f1de1b698cb04497eb4b073c = L.control.layers(
+                layer_control_00c5fb64f1de1b698cb04497eb4b073c_layers.base_layers,
+                layer_control_00c5fb64f1de1b698cb04497eb4b073c_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_40e48591c265d4979c650b6a46dcf57a);
+
+        
+</script>
+</html>
