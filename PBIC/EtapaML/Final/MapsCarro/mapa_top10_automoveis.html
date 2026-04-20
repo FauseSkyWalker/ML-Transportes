@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ba3f0ca29bc356c4072da3980b07113f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ba3f0ca29bc356c4072da3980b07113f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ba3f0ca29bc356c4072da3980b07113f = L.map(
+                "map_ba3f0ca29bc356c4072da3980b07113f",
+                {
+                    center: [-22.14296968, -47.921314],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f13bc9cb4fe280a0775998d38bee244e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f13bc9cb4fe280a0775998d38bee244e.addTo(map_ba3f0ca29bc356c4072da3980b07113f);
+        
+    
+            var marker_cluster_f212a141a1609b331f9bb2e0ebbe8411 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_8335c6335e6efab9d7314b463807bc6b = L.circleMarker(
+                [-20.72342022, -43.79985054],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.920948169591306, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f212a141a1609b331f9bb2e0ebbe8411);
+        
+    
+        var popup_0803752cdd37e111b97b05262f1b1162 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d0770b180f5461d794710095b4faa72 = $(`<div id="html_2d0770b180f5461d794710095b4faa72" style="width: 100.0%; height: 100.0%;">     <b>🚗 TOP SEGMENTO AUTOMÓVEIS</b><br>     <hr>     <b>BR:</b> 40 - MG<br>     <b>KM:</b> 635<br>     <hr>     <b>Acidentes:</b> 63<br>     <b>Mortos:</b> 9.0<br>     <b>Feridos Graves:</b> 34.0<br>     <b>Impacto Grave:</b> 43.0<br>     <hr>     <b>Top Veículos:</b><br>     Automóvel: 63     </div>`)[0];
+                popup_0803752cdd37e111b97b05262f1b1162.setContent(html_2d0770b180f5461d794710095b4faa72);
+            
+        
+
+        circle_marker_8335c6335e6efab9d7314b463807bc6b.bindPopup(popup_0803752cdd37e111b97b05262f1b1162)
+        ;
+
+        
+    
+    
+            var circle_marker_3960a64132fa78a3641df4e1280667c8 = L.circleMarker(
+                [-26.874521, -49.182938],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.56786033352154, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f212a141a1609b331f9bb2e0ebbe8411);
+        
+    
+        var popup_bd7d96da50786140dc63f0624fc541ba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf96a107d1a7474a78f1ebc578381f89 = $(`<div id="html_bf96a107d1a7474a78f1ebc578381f89" style="width: 100.0%; height: 100.0%;">     <b>🚗 TOP SEGMENTO AUTOMÓVEIS</b><br>     <hr>     <b>BR:</b> 470 - SC<br>     <b>KM:</b> 60<br>     <hr>     <b>Acidentes:</b> 289<br>     <b>Mortos:</b> 9.0<br>     <b>Feridos Graves:</b> 31.0<br>     <b>Impacto Grave:</b> 40.0<br>     <hr>     <b>Top Veículos:</b><br>     Automóvel: 289     </div>`)[0];
+                popup_bd7d96da50786140dc63f0624fc541ba.setContent(html_bf96a107d1a7474a78f1ebc578381f89);
+            
+        
+
+        circle_marker_3960a64132fa78a3641df4e1280667c8.bindPopup(popup_bd7d96da50786140dc63f0624fc541ba)
+        ;
+
+        
+    
+    
+            var circle_marker_3cf4339fe64b580a7005786bf23c5e3b = L.circleMarker(
+                [-20.52216, -43.83027],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.317808230648232, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f212a141a1609b331f9bb2e0ebbe8411);
+        
+    
+        var popup_27f52b1dab0ad9fd65b712ef2bce4a33 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_821144498986ff1c3a80cee1619caba4 = $(`<div id="html_821144498986ff1c3a80cee1619caba4" style="width: 100.0%; height: 100.0%;">     <b>🚗 TOP SEGMENTO AUTOMÓVEIS</b><br>     <hr>     <b>BR:</b> 40 - MG<br>     <b>KM:</b> 610<br>     <hr>     <b>Acidentes:</b> 118<br>     <b>Mortos:</b> 10.0<br>     <b>Feridos Graves:</b> 28.0<br>     <b>Impacto Grave:</b> 38.0<br>     <hr>     <b>Top Veículos:</b><br>     Automóvel: 118     </div>`)[0];
+                popup_27f52b1dab0ad9fd65b712ef2bce4a33.setContent(html_821144498986ff1c3a80cee1619caba4);
+            
+        
+
+        circle_marker_3cf4339fe64b580a7005786bf23c5e3b.bindPopup(popup_27f52b1dab0ad9fd65b712ef2bce4a33)
+        ;
+
+        
+    
+    
+            var circle_marker_64d83b26e4a0afca86cce33e83107405 = L.circleMarker(
+                [-23.19248439, -45.86551666],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.18793079863193, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f212a141a1609b331f9bb2e0ebbe8411);
+        
+    
+        var popup_b8a7b8500194712925016c56ad0eaab2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5a4e1d85a67ea9725f7c92535c28a82 = $(`<div id="html_d5a4e1d85a67ea9725f7c92535c28a82" style="width: 100.0%; height: 100.0%;">     <b>🚗 TOP SEGMENTO AUTOMÓVEIS</b><br>     <hr>     <b>BR:</b> 116 - SP<br>     <b>KM:</b> 145<br>     <hr>     <b>Acidentes:</b> 636<br>     <b>Mortos:</b> 2.0<br>     <b>Feridos Graves:</b> 35.0<br>     <b>Impacto Grave:</b> 37.0<br>     <hr>     <b>Top Veículos:</b><br>     Automóvel: 636     </div>`)[0];
+                popup_b8a7b8500194712925016c56ad0eaab2.setContent(html_d5a4e1d85a67ea9725f7c92535c28a82);
+            
+        
+
+        circle_marker_64d83b26e4a0afca86cce33e83107405.bindPopup(popup_b8a7b8500194712925016c56ad0eaab2)
+        ;
+
+        
+    
+    
+            var circle_marker_8b642cf0cfaa15bca510480db5544fb1 = L.circleMarker(
+                [-27.691511, -48.970215],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.05458956322112, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f212a141a1609b331f9bb2e0ebbe8411);
+        
+    
+        var popup_19e2f1afe1ceb00806cf64906526a8d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7002d08f9e33a95fafd360221298a134 = $(`<div id="html_7002d08f9e33a95fafd360221298a134" style="width: 100.0%; height: 100.0%;">     <b>🚗 TOP SEGMENTO AUTOMÓVEIS</b><br>     <hr>     <b>BR:</b> 282 - SC<br>     <b>KM:</b> 50<br>     <hr>     <b>Acidentes:</b> 95<br>     <b>Mortos:</b> 6.0<br>     <b>Feridos Graves:</b> 30.0<br>     <b>Impacto Grave:</b> 36.0<br>     <hr>     <b>Top Veículos:</b><br>     Automóvel: 95     </div>`)[0];
+                popup_19e2f1afe1ceb00806cf64906526a8d8.setContent(html_7002d08f9e33a95fafd360221298a134);
+            
+        
+
+        circle_marker_8b642cf0cfaa15bca510480db5544fb1.bindPopup(popup_19e2f1afe1ceb00806cf64906526a8d8)
+        ;
+
+        
+    
+    
+            var circle_marker_05d83438c9deeea763ad237584336edc = L.circleMarker(
+                [-19.84962291, -43.108583014999994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.91759469228055, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f212a141a1609b331f9bb2e0ebbe8411);
+        
+    
+        var popup_e10b73cac32cc4abd549ccb7a88f1358 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce1585c68e634a697fedf674483be49b = $(`<div id="html_ce1585c68e634a697fedf674483be49b" style="width: 100.0%; height: 100.0%;">     <b>🚗 TOP SEGMENTO AUTOMÓVEIS</b><br>     <hr>     <b>BR:</b> 381 - MG<br>     <b>KM:</b> 340<br>     <hr>     <b>Acidentes:</b> 84<br>     <b>Mortos:</b> 6.0<br>     <b>Feridos Graves:</b> 29.0<br>     <b>Impacto Grave:</b> 35.0<br>     <hr>     <b>Top Veículos:</b><br>     Automóvel: 84     </div>`)[0];
+                popup_e10b73cac32cc4abd549ccb7a88f1358.setContent(html_ce1585c68e634a697fedf674483be49b);
+            
+        
+
+        circle_marker_05d83438c9deeea763ad237584336edc.bindPopup(popup_e10b73cac32cc4abd549ccb7a88f1358)
+        ;
+
+        
+    
+    
+            var circle_marker_078a776252ed6dfcedee5a26668facce = L.circleMarker(
+                [-27.714352, -48.938072],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.91759469228055, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f212a141a1609b331f9bb2e0ebbe8411);
+        
+    
+        var popup_55813ae6d6bc9ba08603bfbc0ab82c98 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d3898d665dffff9091a5e5a2509783c7 = $(`<div id="html_d3898d665dffff9091a5e5a2509783c7" style="width: 100.0%; height: 100.0%;">     <b>🚗 TOP SEGMENTO AUTOMÓVEIS</b><br>     <hr>     <b>BR:</b> 282 - SC<br>     <b>KM:</b> 45<br>     <hr>     <b>Acidentes:</b> 91<br>     <b>Mortos:</b> 2.0<br>     <b>Feridos Graves:</b> 33.0<br>     <b>Impacto Grave:</b> 35.0<br>     <hr>     <b>Top Veículos:</b><br>     Automóvel: 91     </div>`)[0];
+                popup_55813ae6d6bc9ba08603bfbc0ab82c98.setContent(html_d3898d665dffff9091a5e5a2509783c7);
+            
+        
+
+        circle_marker_078a776252ed6dfcedee5a26668facce.bindPopup(popup_55813ae6d6bc9ba08603bfbc0ab82c98)
+        ;
+
+        
+    
+    
+            var circle_marker_647783eb99bbdcc088a7fab1b9949c11 = L.circleMarker(
+                [-22.91293797, -43.89732384],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.63180262308081, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f212a141a1609b331f9bb2e0ebbe8411);
+        
+    
+        var popup_0f558b8b70009707b484d18fd39879a0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_62bc8da2f70a434dc0ca5a75e56c7c90 = $(`<div id="html_62bc8da2f70a434dc0ca5a75e56c7c90" style="width: 100.0%; height: 100.0%;">     <b>🚗 TOP SEGMENTO AUTOMÓVEIS</b><br>     <hr>     <b>BR:</b> 101 - RJ<br>     <b>KM:</b> 415<br>     <hr>     <b>Acidentes:</b> 168<br>     <b>Mortos:</b> 7.0<br>     <b>Feridos Graves:</b> 26.0<br>     <b>Impacto Grave:</b> 33.0<br>     <hr>     <b>Top Veículos:</b><br>     Automóvel: 168     </div>`)[0];
+                popup_0f558b8b70009707b484d18fd39879a0.setContent(html_62bc8da2f70a434dc0ca5a75e56c7c90);
+            
+        
+
+        circle_marker_647783eb99bbdcc088a7fab1b9949c11.bindPopup(popup_0f558b8b70009707b484d18fd39879a0)
+        ;
+
+        
+    
+    
+            var circle_marker_04c359fb00cd41f23a5e102c432116ad = L.circleMarker(
+                [-27.134565000000002, -49.54071],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.63180262308081, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f212a141a1609b331f9bb2e0ebbe8411);
+        
+    
+        var popup_6a92eae211dc3442b4ee22f12f9df767 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a40e24c2cb917c9f22c86a4601826c23 = $(`<div id="html_a40e24c2cb917c9f22c86a4601826c23" style="width: 100.0%; height: 100.0%;">     <b>🚗 TOP SEGMENTO AUTOMÓVEIS</b><br>     <hr>     <b>BR:</b> 470 - SC<br>     <b>KM:</b> 125<br>     <hr>     <b>Acidentes:</b> 142<br>     <b>Mortos:</b> 12.0<br>     <b>Feridos Graves:</b> 21.0<br>     <b>Impacto Grave:</b> 33.0<br>     <hr>     <b>Top Veículos:</b><br>     Automóvel: 142     </div>`)[0];
+                popup_6a92eae211dc3442b4ee22f12f9df767.setContent(html_a40e24c2cb917c9f22c86a4601826c23);
+            
+        
+
+        circle_marker_04c359fb00cd41f23a5e102c432116ad.bindPopup(popup_6a92eae211dc3442b4ee22f12f9df767)
+        ;
+
+        
+    
+    
+            var circle_marker_806b072f597952d078e38e8b5e6466a4 = L.circleMarker(
+                [-27.271694085, -49.733326735000006],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.482537807332402, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f212a141a1609b331f9bb2e0ebbe8411);
+        
+    
+        var popup_5f283965f2c99a720d6c823bd48281d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc3fe8687963369b2d893ac07f94de12 = $(`<div id="html_fc3fe8687963369b2d893ac07f94de12" style="width: 100.0%; height: 100.0%;">     <b>🚗 TOP SEGMENTO AUTOMÓVEIS</b><br>     <hr>     <b>BR:</b> 470 - SC<br>     <b>KM:</b> 150<br>     <hr>     <b>Acidentes:</b> 70<br>     <b>Mortos:</b> 7.0<br>     <b>Feridos Graves:</b> 25.0<br>     <b>Impacto Grave:</b> 32.0<br>     <hr>     <b>Top Veículos:</b><br>     Automóvel: 70     </div>`)[0];
+                popup_5f283965f2c99a720d6c823bd48281d2.setContent(html_fc3fe8687963369b2d893ac07f94de12);
+            
+        
+
+        circle_marker_806b072f597952d078e38e8b5e6466a4.bindPopup(popup_5f283965f2c99a720d6c823bd48281d2)
+        ;
+
+        
+    
+    
+            marker_cluster_f212a141a1609b331f9bb2e0ebbe8411.addTo(map_ba3f0ca29bc356c4072da3980b07113f);
+        
+    
+            var layer_control_ace796941f866e2ae6ec3c6d2dbbebf8_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f13bc9cb4fe280a0775998d38bee244e,
+                },
+                overlays :  {
+                    "\ud83d\ude97 Top 10 Autom\u00f3veis (Impacto Grave)" : marker_cluster_f212a141a1609b331f9bb2e0ebbe8411,
+                },
+            };
+            let layer_control_ace796941f866e2ae6ec3c6d2dbbebf8 = L.control.layers(
+                layer_control_ace796941f866e2ae6ec3c6d2dbbebf8_layers.base_layers,
+                layer_control_ace796941f866e2ae6ec3c6d2dbbebf8_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_ba3f0ca29bc356c4072da3980b07113f);
+
+        
+</script>
+</html>

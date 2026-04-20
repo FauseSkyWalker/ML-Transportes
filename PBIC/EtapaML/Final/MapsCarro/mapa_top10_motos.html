@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fc1cc212472690070d2c1e04e8387715 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fc1cc212472690070d2c1e04e8387715" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fc1cc212472690070d2c1e04e8387715 = L.map(
+                "map_fc1cc212472690070d2c1e04e8387715",
+                {
+                    center: [-20.09999, -46.50704901],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8afa23ccb79c203ccf9a5e05e251c0e1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8afa23ccb79c203ccf9a5e05e251c0e1.addTo(map_fc1cc212472690070d2c1e04e8387715);
+        
+    
+            var marker_cluster_842b9e3a1ff94bb05c8b15b656ea5160 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_4e182e628c4d928e720af65ba55f2297 = L.circleMarker(
+                [-27.62996929, -48.65903871],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38.156058909106825, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_842b9e3a1ff94bb05c8b15b656ea5160);
+        
+    
+        var popup_c9255c9659110ca3921ed9899f9bee7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a5149f91509baa9748108f812fda8ec = $(`<div id="html_0a5149f91509baa9748108f812fda8ec" style="width: 100.0%; height: 100.0%;">     <b>🏍 TOP SEGMENTO MOTOS</b><br>     <hr>     <b>BR:</b> 101 - SC<br>     <b>KM:</b> 210<br>     <hr>     <b>Acidentes:</b> 1049<br>     <b>Mortos:</b> 13.0<br>     <b>Feridos Graves:</b> 265.0<br>     <b>Impacto Grave:</b> 278.0<br>     <hr>     <b>Top Veículos:</b><br>     Motocicleta: 840<br>Motoneta: 209     </div>`)[0];
+                popup_c9255c9659110ca3921ed9899f9bee7f.setContent(html_0a5149f91509baa9748108f812fda8ec);
+            
+        
+
+        circle_marker_4e182e628c4d928e720af65ba55f2297.bindPopup(popup_c9255c9659110ca3921ed9899f9bee7f)
+        ;
+
+        
+    
+    
+            var circle_marker_a7b9441ea305373d4f7a360e0fbf1e91 = L.circleMarker(
+                [-27.60001226, -48.6226467],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38.10200432858575, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_842b9e3a1ff94bb05c8b15b656ea5160);
+        
+    
+        var popup_8da3870d9e4485086c6a5466c0632244 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_021c116776a15a3821d99e46b9050da7 = $(`<div id="html_021c116776a15a3821d99e46b9050da7" style="width: 100.0%; height: 100.0%;">     <b>🏍 TOP SEGMENTO MOTOS</b><br>     <hr>     <b>BR:</b> 101 - SC<br>     <b>KM:</b> 205<br>     <hr>     <b>Acidentes:</b> 1275<br>     <b>Mortos:</b> 19.0<br>     <b>Feridos Graves:</b> 256.0<br>     <b>Impacto Grave:</b> 275.0<br>     <hr>     <b>Top Veículos:</b><br>     Motocicleta: 1043<br>Motoneta: 232     </div>`)[0];
+                popup_8da3870d9e4485086c6a5466c0632244.setContent(html_021c116776a15a3821d99e46b9050da7);
+            
+        
+
+        circle_marker_a7b9441ea305373d4f7a360e0fbf1e91.bindPopup(popup_8da3870d9e4485086c6a5466c0632244)
+        ;
+
+        
+    
+    
+            var circle_marker_fb97cd6a09e4be5e29d7387dc1f7fbd4 = L.circleMarker(
+                [-20.207172, -40.269405],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.99248515632913, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_842b9e3a1ff94bb05c8b15b656ea5160);
+        
+    
+        var popup_c34b574980995b405c98eb179d67fd86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02046ee69754f1d67f538b5f5013b6ee = $(`<div id="html_02046ee69754f1d67f538b5f5013b6ee" style="width: 100.0%; height: 100.0%;">     <b>🏍 TOP SEGMENTO MOTOS</b><br>     <hr>     <b>BR:</b> 101 - ES<br>     <b>KM:</b> 265<br>     <hr>     <b>Acidentes:</b> 734<br>     <b>Mortos:</b> 10.0<br>     <b>Feridos Graves:</b> 170.0<br>     <b>Impacto Grave:</b> 180.0<br>     <hr>     <b>Top Veículos:</b><br>     Motocicleta: 649<br>Motoneta: 85     </div>`)[0];
+                popup_c34b574980995b405c98eb179d67fd86.setContent(html_02046ee69754f1d67f538b5f5013b6ee);
+            
+        
+
+        circle_marker_fb97cd6a09e4be5e29d7387dc1f7fbd4.bindPopup(popup_c34b574980995b405c98eb179d67fd86)
+        ;
+
+        
+    
+    
+            var circle_marker_8c47ed107387d6ac7b339c018a8f8924 = L.circleMarker(
+                [-27.5627686, -48.616909],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.936929029203775, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_842b9e3a1ff94bb05c8b15b656ea5160);
+        
+    
+        var popup_3ebdf45ec4ede2964657bea333cd19a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02b156dbfd43f870a3042f100193d07f = $(`<div id="html_02b156dbfd43f870a3042f100193d07f" style="width: 100.0%; height: 100.0%;">     <b>🏍 TOP SEGMENTO MOTOS</b><br>     <hr>     <b>BR:</b> 101 - SC<br>     <b>KM:</b> 200<br>     <hr>     <b>Acidentes:</b> 885<br>     <b>Mortos:</b> 13.0<br>     <b>Feridos Graves:</b> 165.0<br>     <b>Impacto Grave:</b> 178.0<br>     <hr>     <b>Top Veículos:</b><br>     Motocicleta: 724<br>Motoneta: 161     </div>`)[0];
+                popup_3ebdf45ec4ede2964657bea333cd19a5.setContent(html_02b156dbfd43f870a3042f100193d07f);
+            
+        
+
+        circle_marker_8c47ed107387d6ac7b339c018a8f8924.bindPopup(popup_3ebdf45ec4ede2964657bea333cd19a5)
+        ;
+
+        
+    
+    
+            var circle_marker_8bbea7db16ccb34aae60e4668ddac848 = L.circleMarker(
+                [-8.05074296, -34.94571216],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.43798167616192, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_842b9e3a1ff94bb05c8b15b656ea5160);
+        
+    
+        var popup_8332471e4634abc2b027e9a20551f897 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d0a02070beee77d2bbb1c916866769f = $(`<div id="html_9d0a02070beee77d2bbb1c916866769f" style="width: 100.0%; height: 100.0%;">     <b>🏍 TOP SEGMENTO MOTOS</b><br>     <hr>     <b>BR:</b> 101 - PE<br>     <b>KM:</b> 65<br>     <hr>     <b>Acidentes:</b> 616<br>     <b>Mortos:</b> 10.0<br>     <b>Feridos Graves:</b> 151.0<br>     <b>Impacto Grave:</b> 161.0<br>     <hr>     <b>Top Veículos:</b><br>     Motocicleta: 603<br>Motoneta: 13     </div>`)[0];
+                popup_8332471e4634abc2b027e9a20551f897.setContent(html_9d0a02070beee77d2bbb1c916866769f);
+            
+        
+
+        circle_marker_8bbea7db16ccb34aae60e4668ddac848.bindPopup(popup_8332471e4634abc2b027e9a20551f897)
+        ;
+
+        
+    
+    
+            var circle_marker_0166c6b1d079de8d2c5c06ee66857129 = L.circleMarker(
+                [-3.74008478, -38.59569202],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.34452101110116, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_842b9e3a1ff94bb05c8b15b656ea5160);
+        
+    
+        var popup_e7dfb4864d35f81e54238b69ddfb3a90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_607dcbdddaa36f2b702401f389e611b4 = $(`<div id="html_607dcbdddaa36f2b702401f389e611b4" style="width: 100.0%; height: 100.0%;">     <b>🏍 TOP SEGMENTO MOTOS</b><br>     <hr>     <b>BR:</b> 222 - CE<br>     <b>KM:</b> 0<br>     <hr>     <b>Acidentes:</b> 605<br>     <b>Mortos:</b> 10.0<br>     <b>Feridos Graves:</b> 148.0<br>     <b>Impacto Grave:</b> 158.0<br>     <hr>     <b>Top Veículos:</b><br>     Motocicleta: 586<br>Motoneta: 19     </div>`)[0];
+                popup_e7dfb4864d35f81e54238b69ddfb3a90.setContent(html_607dcbdddaa36f2b702401f389e611b4);
+            
+        
+
+        circle_marker_0166c6b1d079de8d2c5c06ee66857129.bindPopup(popup_e7dfb4864d35f81e54238b69ddfb3a90)
+        ;
+
+        
+    
+    
+            var circle_marker_4a1af5ec464eac404e4ddd17de383698 = L.circleMarker(
+                [-26.996647664999998, -48.6543305],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.28122902674154, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_842b9e3a1ff94bb05c8b15b656ea5160);
+        
+    
+        var popup_9a5c496c32a0e42146fcf4c3627a84c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe1297d4efc0a314c023203789a59a23 = $(`<div id="html_fe1297d4efc0a314c023203789a59a23" style="width: 100.0%; height: 100.0%;">     <b>🏍 TOP SEGMENTO MOTOS</b><br>     <hr>     <b>BR:</b> 101 - SC<br>     <b>KM:</b> 130<br>     <hr>     <b>Acidentes:</b> 540<br>     <b>Mortos:</b> 10.0<br>     <b>Feridos Graves:</b> 146.0<br>     <b>Impacto Grave:</b> 156.0<br>     <hr>     <b>Top Veículos:</b><br>     Motocicleta: 373<br>Motoneta: 167     </div>`)[0];
+                popup_9a5c496c32a0e42146fcf4c3627a84c1.setContent(html_fe1297d4efc0a314c023203789a59a23);
+            
+        
+
+        circle_marker_4a1af5ec464eac404e4ddd17de383698.bindPopup(popup_9a5c496c32a0e42146fcf4c3627a84c1)
+        ;
+
+        
+    
+    
+            var circle_marker_436b40a2c9f05da2d6cc0da8d6af5ca9 = L.circleMarker(
+                [-27.65981409, -48.67604941],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.053176470481276, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_842b9e3a1ff94bb05c8b15b656ea5160);
+        
+    
+        var popup_e52d106e76060fc28263c6ca7caa803e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7766a2e213699e7ffb774d0e1577fcaa = $(`<div id="html_7766a2e213699e7ffb774d0e1577fcaa" style="width: 100.0%; height: 100.0%;">     <b>🏍 TOP SEGMENTO MOTOS</b><br>     <hr>     <b>BR:</b> 101 - SC<br>     <b>KM:</b> 215<br>     <hr>     <b>Acidentes:</b> 531<br>     <b>Mortos:</b> 7.0<br>     <b>Feridos Graves:</b> 142.0<br>     <b>Impacto Grave:</b> 149.0<br>     <hr>     <b>Top Veículos:</b><br>     Motocicleta: 408<br>Motoneta: 123     </div>`)[0];
+                popup_e52d106e76060fc28263c6ca7caa803e.setContent(html_7766a2e213699e7ffb774d0e1577fcaa);
+            
+        
+
+        circle_marker_436b40a2c9f05da2d6cc0da8d6af5ca9.bindPopup(popup_e52d106e76060fc28263c6ca7caa803e)
+        ;
+
+        
+    
+    
+            var circle_marker_674ec2941e683f0f1d91bac146b82255 = L.circleMarker(
+                [-8.075236, -34.967663],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 34.56327442868026, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_842b9e3a1ff94bb05c8b15b656ea5160);
+        
+    
+        var popup_ae433a43a7a36678b2fa5c69f63a0f31 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d4885802812a20642e05151c0672630 = $(`<div id="html_9d4885802812a20642e05151c0672630" style="width: 100.0%; height: 100.0%;">     <b>🏍 TOP SEGMENTO MOTOS</b><br>     <hr>     <b>BR:</b> 232 - PE<br>     <b>KM:</b> 5<br>     <hr>     <b>Acidentes:</b> 416<br>     <b>Mortos:</b> 6.0<br>     <b>Feridos Graves:</b> 129.0<br>     <b>Impacto Grave:</b> 135.0<br>     <hr>     <b>Top Veículos:</b><br>     Motocicleta: 404<br>Motoneta: 12     </div>`)[0];
+                popup_ae433a43a7a36678b2fa5c69f63a0f31.setContent(html_9d4885802812a20642e05151c0672630);
+            
+        
+
+        circle_marker_674ec2941e683f0f1d91bac146b82255.bindPopup(popup_ae433a43a7a36678b2fa5c69f63a0f31)
+        ;
+
+        
+    
+    
+            var circle_marker_c2ce76f1bcb494ebe8b92fe7d9ebbf2d = L.circleMarker(
+                [-27.0157238, -48.61192763],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 34.48919899975456, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_842b9e3a1ff94bb05c8b15b656ea5160);
+        
+    
+        var popup_0dbd692132862dc0bd5e799b03a0af8b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e8bd740c367e7e7412a0e7f42d134888 = $(`<div id="html_e8bd740c367e7e7412a0e7f42d134888" style="width: 100.0%; height: 100.0%;">     <b>🏍 TOP SEGMENTO MOTOS</b><br>     <hr>     <b>BR:</b> 101 - SC<br>     <b>KM:</b> 135<br>     <hr>     <b>Acidentes:</b> 433<br>     <b>Mortos:</b> 14.0<br>     <b>Feridos Graves:</b> 119.0<br>     <b>Impacto Grave:</b> 133.0<br>     <hr>     <b>Top Veículos:</b><br>     Motocicleta: 345<br>Motoneta: 88     </div>`)[0];
+                popup_0dbd692132862dc0bd5e799b03a0af8b.setContent(html_e8bd740c367e7e7412a0e7f42d134888);
+            
+        
+
+        circle_marker_c2ce76f1bcb494ebe8b92fe7d9ebbf2d.bindPopup(popup_0dbd692132862dc0bd5e799b03a0af8b)
+        ;
+
+        
+    
+    
+            marker_cluster_842b9e3a1ff94bb05c8b15b656ea5160.addTo(map_fc1cc212472690070d2c1e04e8387715);
+        
+    
+            var layer_control_59f28ffce5526ef65fd935367c8ca583_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_8afa23ccb79c203ccf9a5e05e251c0e1,
+                },
+                overlays :  {
+                    "\ud83c\udfcd Top 10 Motos (Impacto Grave)" : marker_cluster_842b9e3a1ff94bb05c8b15b656ea5160,
+                },
+            };
+            let layer_control_59f28ffce5526ef65fd935367c8ca583 = L.control.layers(
+                layer_control_59f28ffce5526ef65fd935367c8ca583_layers.base_layers,
+                layer_control_59f28ffce5526ef65fd935367c8ca583_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_fc1cc212472690070d2c1e04e8387715);
+
+        
+</script>
+</html>
