@@ -1,6 +1,6 @@
 # ML-Transportes
 
-Repositório com o intuito de realizar análises e treinamentos com modelos de machine learning a respeito da base de dados de municípios integrados ao SNT.
+Este repositório foi desenvolvido no contexto de um projeto de PIBIC, referente ao processo de iniciação científica do aluno Fause Caros Mascarenhas Lustosa Junior, Engenheiro de Software pela UnB. O principal objetivo do trabalho é realizar análises com machine learning e exploração de dados a partir da base de dados aberta da PRF, relacionada a acidentes de trânsito em todo o território nacional.
 
 ## Objetivo
 
